@@ -27,9 +27,13 @@
 @synthesize track_id;
 @synthesize latitude, longitude, direction, distance, zoom;
 @synthesize parmanentUrl, title, userName, country, city, imageUrl;
+@synthesize imageview;
 
 - (id)initWithTrackInfo:(NSDictionary *)trackInfo withSoundCloud:(SWSoundCloud *)sc withGeoManager:(SWGeoManager *)gm {
     [super self];
+    
+    CGRect rect = CGRectMake(160, 240, 100, 100);
+    self.imageview = [[UIImageView alloc] initWithFrame:rect];
     
     isSoundReady = false;
     isUserInfoReady = false;
@@ -61,6 +65,14 @@
     isUserInfoReady = true;
     
     [geoManager searchGeometryByCountry:country andCity:city forTrack:self];
+
+    NSURL *url = [NSURL URLWithString:self.imageUrl];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [[UIImage alloc] initWithData:data];
+//    UIImage *image = [UIImage imageNamed:@"test.jpg"];
+    NSLog(@"image: %@", image);
+	self.imageview.image = image;
+    [self.imageview.superview addSubview:self.imageview];
 }
 
 - (void)setLatitude:(double)latDegree longitude:(double)lngDegree {

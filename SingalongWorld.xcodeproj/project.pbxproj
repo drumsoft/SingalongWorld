@@ -108,6 +108,7 @@
 		0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D10421218B8E10000BC62E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10421118B8E10000BC62E1 /* CoreLocation.framework */; };
 		0D10421518B9139D00BC62E1 /* SWTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10421418B9139D00BC62E1 /* SWTrack.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D10421718B941EF00BC62E1 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D10421618B941EF00BC62E1 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -352,6 +353,7 @@
 		0D10421118B8E10000BC62E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0D10421318B9139D00BC62E1 /* SWTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTrack.h; sourceTree = "<group>"; };
 		0D10421418B9139D00BC62E1 /* SWTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTrack.m; sourceTree = "<group>"; };
+		0D10421618B941EF00BC62E1 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = SingalongWorld/test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +384,7 @@
 		0D10408818B88DDD00BC62E1 = {
 			isa = PBXGroup;
 			children = (
+				0D10421618B941EF00BC62E1 /* test.jpg */,
 				0D10420318B89C9100BC62E1 /* JSONKit */,
 				0D1040C918B8966600BC62E1 /* CocoaSoundCloudAPI */,
 				0D1040E718B8966600BC62E1 /* CocoaSoundCloudUI */,
@@ -924,6 +927,7 @@
 				0D10418F18B8966700BC62E1 /* LICENSE in Resources */,
 				0D10419F18B8966700BC62E1 /* SoundCloud.bundle in Resources */,
 				0D10409F18B88DDD00BC62E1 /* InfoPlist.strings in Resources */,
+				0D10421718B941EF00BC62E1 /* test.jpg in Resources */,
 				0D10419118B8966700BC62E1 /* README.md in Resources */,
 				0D10419C18B8966700BC62E1 /* LICENSE in Resources */,
 				0D1041E018B8966700BC62E1 /* LICENSE in Resources */,

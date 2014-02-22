@@ -17,10 +17,12 @@
     long long track_id;
     double latitude, longitude, direction, distance, zoom;
     NSString *parmanentUrl, *title, *userName, *country, *city, *imageUrl;
+    UIImageView *imageview;
 }
 @property (nonatomic) long long track_id;
 @property (nonatomic) double latitude, longitude, direction, distance, zoom;
 @property (nonatomic, copy) NSString *parmanentUrl, *title, *userName, *country, *city, *imageUrl;
+@property (nonatomic, retain) UIImageView *imageview;
 
 - (id)initWithTrackInfo:(NSDictionary *)trackInfo withSoundCloud:(SWSoundCloud *)sc withGeoManager:(SWGeoManager *)gm;
 

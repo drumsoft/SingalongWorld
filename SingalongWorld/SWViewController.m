@@ -63,6 +63,8 @@
 - (void)addTrackWithTrackInfo:(NSDictionary *)trackInfo {
     SWTrack *track = [[SWTrack alloc] initWithTrackInfo:trackInfo withSoundCloud:soundCloud withGeoManager:geoManager];
     [tracksArray addObject:track];
+    track.imageview.hidden = true;
+    [self.view addSubview:track.imageview];
 }
 
 // 方向転換によって状態を更新する
@@ -79,11 +81,29 @@
             track.direction = atan2(dx, dy) - direction * (2*M_PI) / 360;
             track.distance = sqrt(dx*dx + dy*dy);
             
+            // パンとボリューム
             double pan = sin(track.direction);
             double volume = 0.30 * cos(track.direction) + 0.30;
             
             [track setPan: pan andVolume: volume ];
             
+            // 写真の配置
+            float z  = track.distance * cos(track.direction) / 20;
+            if ( z > 0.1 ) {
+                float x1 = track.distance * sin(track.direction);
+                float y1 = 0;
+                float x2 = 160 + 20 * x1 / z;
+                float y2 = 240 + 20 * y1 / z;
+                NSLog(@"%f, {%f, %f, %f}", track.distance, x2, y2, z);
+                
+                float w = 200 / z;
+                track.imageview.frame = CGRectMake( x2 - w/2, y2 - w/2, w, w );
+                track.imageview.hidden = false;
+            } else {
+                track.imageview.hidden = true;
+            }
+            
+            // 最も真ん中のデータ
             if ( volume > maxVolume ) {
                 selected = track;
                 selectedPan = pan;
