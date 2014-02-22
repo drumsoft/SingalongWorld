@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+@class SWTrack;
+@class SWViewController;
+
 @interface SWGeoManager : NSObject <CLLocationManagerDelegate> {
     
 }
-- (void)startGPS;
+- (void)startGPSWithController:(SWViewController *)controller;
 
-- (void)setGeometryByCountry:(NSString *)country andCity:(NSString *)city forKey:(id)key;
-- (void)queryPan:(float *)pan andVolume:(float *)volume forKey:(id)key;
+- (void)searchGeometryByCountry:(NSString *)country andCity:(NSString *)city forTrack:(SWTrack *)track;
 
 @end

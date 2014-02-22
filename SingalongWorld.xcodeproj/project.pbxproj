@@ -107,6 +107,7 @@
 		0D10420D18B8A8F000BC62E1 /* SWSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */; };
 		0D10421218B8E10000BC62E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10421118B8E10000BC62E1 /* CoreLocation.framework */; };
+		0D10421518B9139D00BC62E1 /* SWTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10421418B9139D00BC62E1 /* SWTrack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -349,6 +350,8 @@
 		0D10420E18B8DE7A00BC62E1 /* SWGeoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGeoManager.h; sourceTree = "<group>"; };
 		0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGeoManager.m; sourceTree = "<group>"; };
 		0D10421118B8E10000BC62E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0D10421318B9139D00BC62E1 /* SWTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTrack.h; sourceTree = "<group>"; };
+		0D10421418B9139D00BC62E1 /* SWTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTrack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +427,8 @@
 				0D1040AA18B88DDD00BC62E1 /* SWViewController.m */,
 				0D10420B18B8A8F000BC62E1 /* SWSoundCloud.h */,
 				0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */,
+				0D10421318B9139D00BC62E1 /* SWTrack.h */,
+				0D10421418B9139D00BC62E1 /* SWTrack.m */,
 				0D1040AC18B88DDD00BC62E1 /* Images.xcassets */,
 				0D10409B18B88DDD00BC62E1 /* Supporting Files */,
 			);
@@ -1005,6 +1010,7 @@
 				0D1041A918B8966700BC62E1 /* SCAddConnectionViewController.m in Sources */,
 				0D1041D818B8966700BC62E1 /* NXOAuth2Request.m in Sources */,
 				0D10419518B8966700BC62E1 /* SCAccount+Private.m in Sources */,
+				0D10421518B9139D00BC62E1 /* SWTrack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

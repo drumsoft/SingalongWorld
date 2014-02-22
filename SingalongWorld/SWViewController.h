@@ -16,4 +16,8 @@
 
 - (IBAction)startSearch:(id)sender;
 
+- (void)addTrackWithTrackInfo:(NSDictionary *)trackInfo;
+
+- (void)updateDirection:(double)direction fromLatitude:(double)latDegree andLongitude:(double)lngDegree;
+
 @end

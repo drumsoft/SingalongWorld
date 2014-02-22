@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
 
+#import "SWTrack.h"
 #import "SWSoundCloud.h"
 #import "SCUI.h"
+#import "SWViewController.h"
 
 #define SW_SOUNDCLOUD_CLIENT_ID     @"80b083d0d4d07a1cf3bbd93e169fbd51"
 #define SW_SOUNDCLOUD_CLIENT_SECRET @"8ec0042d5d2846fef4b2e6bdddce4d09"
@@ -20,15 +21,10 @@ SWSoundCloud* SWSoundCloud_me;
 @interface SWSoundCloud () {
     SCAccount *account;
     NSString *prevQuery;
-    NSMutableDictionary *playerDict;
-    NSMutableDictionary *metadataDict;
 }
 - (NSString *)normalizeText:(NSString *)text;
-- (void)startDownStream:(NSString *)url forId:(id) track_id;
-- (void)startFetchUserDetail:(id)user_id forId:(id)track_id;
-
-- (void)resetDicts;
 @end
+
 
 @implementation SWSoundCloud
 
@@ -48,7 +44,7 @@ SWSoundCloud* SWSoundCloud_me;
 //    account = [SCSoundCloud account];
 }
 
-- (void)startDownStream:(NSString *)url forId:(id)track_id {
+- (void)startDownStream:(NSString *)url forTrack:(SWTrack *)track {
     [SCRequest performMethod:SCRequestMethodGET
                   onResource:[NSURL URLWithString:url]
              usingParameters:@{ @"client_id":SW_SOUNDCLOUD_CLIENT_ID }
@@ -58,22 +54,15 @@ SWSoundCloud* SWSoundCloud_me;
                  if ( error ) {
                      NSLog(@"Stream error: - %@ - %@", [error localizedDescription], response);
                  } else {
-                     NSError *playerError;
-                     AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithData:data error:&playerError];
-                     [player prepareToPlay];
-                     player.numberOfLoops = -1;
-                     player.pan    =  -1 +   2 * ((float)rand() / (float)RAND_MAX);
-                     player.volume = 0.1 + 0.4 * ((float)rand() / (float)RAND_MAX);
-                     [player play];
-                     [playerDict setValue:player forKey:track_id];
+                     [track setSoundData:data];
                  }
              }];
 }
 
-- (void)startFetchUserDetail:(id)user_id forId:(id)track_id {
+- (void)startFetchUserDetail:(long long)user_id forTrack:(SWTrack *)track {
     [SCRequest performMethod:SCRequestMethodGET
                   onResource:[NSURL URLWithString:
-                              [NSString stringWithFormat:@"https://api.soundcloud.com/users/%d.json", [user_id intValue]]
+                              [NSString stringWithFormat:@"https://api.soundcloud.com/users/%lld.json", user_id]
                               ]
              usingParameters:@{ @"client_id":SW_SOUNDCLOUD_CLIENT_ID }
                  withAccount:nil
@@ -90,10 +79,7 @@ SWSoundCloud* SWSoundCloud_me;
                                                           options:0
                                                           error:&jsonError];
                      if (!jsonError) {
-                         //NSLog(@"User Detail: %@", jsonResponse);
-                         NSLog(@"avatar_url : %@", [jsonResponse valueForKey:@"avatar_url"]);
-                         NSLog(@"city : %@", [jsonResponse valueForKey:@"city"]);
-                         NSLog(@"country : %@", [jsonResponse valueForKey:@"country"]);
+                         [track setUserDetailInfo:(NSDictionary *)jsonResponse];
                      } else {
                          NSLog(@"json parse error: - %@ - %@", jsonResponse, jsonError);
                      }
@@ -101,7 +87,7 @@ SWSoundCloud* SWSoundCloud_me;
              }];
 }
 
-- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter {
+- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller {
     NSString *qTitle = [self normalizeText:searchTitle];
     NSString *qFilter = [self normalizeText:searchFilter];
     NSString *query = [NSString stringWithFormat:@"%@ %@", qTitle, qFilter];
@@ -135,20 +121,9 @@ SWSoundCloud* SWSoundCloud_me;
                          }]
                                             ];
                          NSLog(@"result: %d / %d", [result count], [(NSArray *)jsonResponse count] );
-                         // 前回の実行をリセット
-                         [self resetDicts];
                          // メタデータを保存
                          for(NSDictionary *track in result){
-                             [metadataDict setValue:track forKey:[track valueForKey:@"id"]];
-                         }
-                         // ユーザデータDL開始
-                         for(NSDictionary *track in result){
-                             [self startFetchUserDetail:[track valueForKey:@"user_id"] forId:[track valueForKey:@"id"]];
-                         }
-                         // 音声データDL開始
-                         for(NSDictionary *track in result){
-                             NSLog(@"%@", [track valueForKey:@"title"]);
-                             [self startDownStream:[track valueForKey:@"stream_url"] forId:[track valueForKey:@"id"]];
+                             [controller addTrackWithTrackInfo:track];
                          }
                      } else {
                          NSLog(@"json parse error: - %@ - %@", jsonResponse, jsonError);
@@ -159,12 +134,6 @@ SWSoundCloud* SWSoundCloud_me;
     prevQuery = query;
     return YES;
 }
-- (void)getTrack:(NSNumber *)track_id {
-    
-}
-- (void)getUser:(NSNumber *)user_id {
-    
-}
 
 // テキストの正規化
 - (NSString *)normalizeText:(NSString *)text {
@@ -173,15 +142,6 @@ SWSoundCloud* SWSoundCloud_me;
     text = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     text = [regexp stringByReplacingMatchesInString: text options:0 range:NSMakeRange(0,text.length) withTemplate:@" "];
     return text;
-}
-
-// 辞書をリセット
-- (void)resetDicts {
-    for ( AVAudioPlayer *player in [playerDict objectEnumerator]) {
-        if ( [player isPlaying] ) [player stop];
-    }
-    playerDict = [[NSMutableDictionary alloc] init];
-    metadataDict = [[NSMutableDictionary alloc] init];
 }
 
 @end

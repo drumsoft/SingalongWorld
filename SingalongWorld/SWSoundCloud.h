@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class SWTrack;
+@class SWViewController;
+
 @interface SWSoundCloud : NSObject {
     
 }
@@ -15,8 +18,11 @@
 + (SWSoundCloud *)instance;
 
 - (void)start;
-- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter;
-- (void)getTrack:(NSNumber *)track_id;
-- (void)getUser:(NSNumber *)user_id;
+
+- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller;
+
+- (void)startFetchUserDetail:(long long)user_id forTrack:(SWTrack *)track;
+- (void)startDownStream:(NSString *)url forTrack:(SWTrack *)track;
+
 
 @end

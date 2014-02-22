@@ -8,10 +8,14 @@
 
 #import "SWGeoManager.h"
 
+#import "SWTrack.h"
+#import "SWViewController.h"
+
 #define SW_GEOMANAGER_DEFAULT_LATITUDE   35.670387
 #define SW_GEOMANAGER_DEFAULT_LONGITUDE 139.707195
 
 @implementation SWGeoManager {
+    SWViewController *viewController;
     CLLocationManager *locationManager;
     double myLatitude, myLongitude, myDirection;
     NSMutableDictionary *locationDictionary;
@@ -28,7 +32,9 @@
     locationDictionary = [[NSMutableDictionary alloc] init];
 }
 
-- (void)startGPS {
+- (void)startGPSWithController:(SWViewController *)controller {
+    viewController = controller;
+    
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
     
@@ -41,43 +47,23 @@
     }
 }
 
-- (void)setGeometryByCountry:(NSString *)country andCity:(NSString *)city forKey:(id)key {
+- (void)searchGeometryByCountry:(NSString *)country andCity:(NSString *)city forTrack:(SWTrack *)track {
     CLGeocoder *geocoder = [[[CLGeocoder alloc] init] autorelease];
     [geocoder geocodeAddressString:[NSString stringWithFormat:@"%@, %@", city, country]
                  completionHandler:^(NSArray* placemarks, NSError* error) {
                      if (!error && [placemarks count] > 0) {
                          CLPlacemark* placemark = placemarks[0];
-                         [locationDictionary setObject:@[
-                                                        [NSNumber numberWithDouble:placemark.location.coordinate.latitude],
-                                                        [NSNumber numberWithDouble:placemark.location.coordinate.longitude]
-                                                        ] forKey:key];
+                         [track setLatitude:placemark.location.coordinate.latitude
+                                  longitude:placemark.location.coordinate.longitude];
                      } else {
                          NSLog(@"Geocoding failed for %@, %@", city, country);
-                         int intKey = [(NSNumber *)key intValue];
+                         long long intKey = track.track_id;
                          double latitude  =  -90 +  (double)90 * ((double)(intKey % 89) / (double)88);
                          double longitude = -180 + (double)180 * ((double)(intKey % 181) / (double)181);
-                         [locationDictionary setObject:@[
-                                                         [NSNumber numberWithDouble:latitude],
-                                                         [NSNumber numberWithDouble:longitude]
-                                                         ] forKey:key];
+                         [track setLatitude:latitude
+                                  longitude:longitude];
                      }
                  }];
-}
-
-- (void)queryPan:(float *)pan andVolume:(float *)volume forKey:(id)key {
-    NSArray *coodinate = [locationDictionary objectForKey:key];
-    if ( coodinate ) {
-        double lat = [coodinate[0] doubleValue];
-        double lng = [coodinate[0] doubleValue];
-        double dx = lat - myLatitude;
-        double dy = (lng - myLongitude) * cos( (lat+myLatitude)*2*M_PI/(2*360) );
-        double d_rotate = atan2(dx, dy) - myDirection * (2*M_PI) / 360;
-        *pan    = sin(d_rotate);
-        *volume = 0.25 * cos(d_rotate) + 0.30;
-    } else {
-        *pan = 0;
-        *volume = 0;
-    }
 }
 
 
@@ -87,7 +73,7 @@
     myLongitude = newLocation.coordinate.longitude;
 }
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
-    myDirection = newHeading.magneticHeading;
+    [viewController updateDirection:newHeading.magneticHeading fromLatitude:myLatitude andLongitude:myLongitude];
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     NSLog( @"GPS Error : %@", error );
