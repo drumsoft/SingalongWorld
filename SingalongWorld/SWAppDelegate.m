@@ -7,8 +7,14 @@
 //
 
 #import "SWAppDelegate.h"
+#import "SWSoundCloud.h"
 
 @implementation SWAppDelegate
+
++ (void)initialize;
+{
+    [[SWSoundCloud instance] start];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

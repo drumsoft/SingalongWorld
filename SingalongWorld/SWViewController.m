@@ -8,11 +8,12 @@
 
 #import "SWViewController.h"
 
+#import "SWSoundCloud.h"
+
+
 @interface SWViewController () {
-    
 }
 - (void)setUptextField:(UITextField *)textField;
-- (NSString *)normalizeText:(NSString *)text;
 @end
 
 @implementation SWViewController
@@ -21,6 +22,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self textFieldDidEndEditing:titleTextField];
+    [self textFieldDidEndEditing:filterTextField];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -32,16 +36,15 @@
 
 // --------------------------------------------------------- textFieldDelegate
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self startSearch];
+    [self startSearch:textField];
 }
 
 // --------------------------------------------------------- public
-- (void)startSearch {
-    NSString *searchTitle = [self normalizeText:titleTextField.text];
-    NSString *searchFilter = [self normalizeText:filterTextField.text];
+- (IBAction)startSearch:(id)sender {
+    NSString *searchTitle = titleTextField.text;
+    NSString *searchFilter = filterTextField.text;
     
-    
-    
+    [[SWSoundCloud instance] searchTitle:searchTitle withFilter:searchFilter];
 }
 
 // --------------------------------------------------------- local utilities
@@ -50,12 +53,6 @@
 - (void)setUptextField:(UITextField *)textField {
     textField.returnKeyType = UIReturnKeyDone;
     [textField setDelegate:self];
-}
-
-// テキストの正規化
-- (NSString *)normalizeText:(NSString *)text {
-    NSLog(@"normalizeText is NYI: %@", text);
-    return text;
 }
 
 

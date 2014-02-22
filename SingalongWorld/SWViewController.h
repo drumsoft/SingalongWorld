@@ -14,6 +14,6 @@
     __weak IBOutlet UILabel *statusLabel;
 }
 
-- (void)startSearch;
+- (IBAction)startSearch:(id)sender;
 
 @end
