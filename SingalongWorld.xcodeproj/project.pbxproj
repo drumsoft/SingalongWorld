@@ -21,6 +21,95 @@
 		0D1040B618B88DDD00BC62E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10409818B88DDD00BC62E1 /* UIKit.framework */; };
 		0D1040BE18B88DDD00BC62E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040BC18B88DDD00BC62E1 /* InfoPlist.strings */; };
 		0D1040C018B88DDD00BC62E1 /* SingalongWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040BF18B88DDD00BC62E1 /* SingalongWorldTests.m */; };
+		0D10418C18B8966700BC62E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CA18B8966600BC62E1 /* .gitignore */; };
+		0D10418D18B8966700BC62E1 /* Changes.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CB18B8966600BC62E1 /* Changes.md */; };
+		0D10418E18B8966700BC62E1 /* GeneralUsage.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CC18B8966600BC62E1 /* GeneralUsage.md */; };
+		0D10418F18B8966700BC62E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CD18B8966600BC62E1 /* LICENSE */; };
+		0D10419018B8966700BC62E1 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CE18B8966600BC62E1 /* NOTICE */; };
+		0D10419118B8966700BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040CF18B8966600BC62E1 /* README.md */; };
+		0D10419218B8966700BC62E1 /* Setup.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040D018B8966600BC62E1 /* Setup.md */; };
+		0D10419318B8966700BC62E1 /* Sharing.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040D118B8966600BC62E1 /* Sharing.md */; };
+		0D10419418B8966700BC62E1 /* SoundCloudAPI.framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040D218B8966600BC62E1 /* SoundCloudAPI.framework-Info.plist */; };
+		0D10419518B8966700BC62E1 /* SCAccount+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040D918B8966600BC62E1 /* SCAccount+Private.m */; };
+		0D10419618B8966700BC62E1 /* SCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040DB18B8966600BC62E1 /* SCAccount.m */; };
+		0D10419718B8966700BC62E1 /* SCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040DE18B8966600BC62E1 /* SCConstants.m */; };
+		0D10419818B8966700BC62E1 /* SCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040E018B8966600BC62E1 /* SCRequest.m */; };
+		0D10419918B8966700BC62E1 /* SCSoundCloud+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040E218B8966600BC62E1 /* SCSoundCloud+Private.m */; };
+		0D10419A18B8966700BC62E1 /* SCSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040E418B8966600BC62E1 /* SCSoundCloud.m */; };
+		0D10419B18B8966700BC62E1 /* CocoaSoundCloudUI.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040E818B8966600BC62E1 /* CocoaSoundCloudUI.podspec */; };
+		0D10419C18B8966700BC62E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040E918B8966600BC62E1 /* LICENSE */; };
+		0D10419D18B8966700BC62E1 /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040EA18B8966600BC62E1 /* NOTICE */; };
+		0D10419E18B8966700BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040EB18B8966600BC62E1 /* README.md */; };
+		0D10419F18B8966700BC62E1 /* SoundCloud.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040EC18B8966600BC62E1 /* SoundCloud.bundle */; };
+		0D1041A018B8966700BC62E1 /* SoundCloudUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040ED18B8966600BC62E1 /* SoundCloudUI-Info.plist */; };
+		0D1041A118B8966700BC62E1 /* NSData+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040F418B8966600BC62E1 /* NSData+SoundCloudUI.m */; };
+		0D1041A218B8966700BC62E1 /* NSString+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040F618B8966600BC62E1 /* NSString+SoundCloudUI.m */; };
+		0D1041A318B8966700BC62E1 /* QuartzCore+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040F818B8966600BC62E1 /* QuartzCore+SoundCloudUI.m */; };
+		0D1041A418B8966700BC62E1 /* UIColor+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040FA18B8966600BC62E1 /* UIColor+SoundCloudUI.m */; };
+		0D1041A518B8966700BC62E1 /* UIDevice+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040FC18B8966600BC62E1 /* UIDevice+SoundCloudUI.m */; };
+		0D1041A618B8966700BC62E1 /* UIImage+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040FE18B8966600BC62E1 /* UIImage+SoundCloudUI.m */; };
+		0D1041A718B8966700BC62E1 /* UIView+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410018B8966600BC62E1 /* UIView+SoundCloudUI.m */; };
+		0D1041A818B8966700BC62E1 /* UIViewController+SoundCloudUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410218B8966600BC62E1 /* UIViewController+SoundCloudUI.m */; };
+		0D1041A918B8966700BC62E1 /* SCAddConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410518B8966600BC62E1 /* SCAddConnectionViewController.m */; };
+		0D1041AA18B8966700BC62E1 /* SCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410818B8966600BC62E1 /* SCAlertView.m */; };
+		0D1041AB18B8966700BC62E1 /* SCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410A18B8966600BC62E1 /* SCBundle.m */; };
+		0D1041AC18B8966700BC62E1 /* SCConnectToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410C18B8966600BC62E1 /* SCConnectToSoundCloudTitleView.m */; };
+		0D1041AD18B8966700BC62E1 /* SCCoverImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10410E18B8966600BC62E1 /* SCCoverImageButton.m */; };
+		0D1041AE18B8966700BC62E1 /* SCCredentialsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411018B8966600BC62E1 /* SCCredentialsView.m */; };
+		0D1041AF18B8966700BC62E1 /* SCDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411218B8966600BC62E1 /* SCDrawing.m */; };
+		0D1041B018B8966700BC62E1 /* SCFoursquarePlacePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411418B8966600BC62E1 /* SCFoursquarePlacePickerController.m */; };
+		0D1041B118B8966700BC62E1 /* SCGradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411718B8966600BC62E1 /* SCGradientButton.m */; };
+		0D1041B218B8966700BC62E1 /* SCHorizontalLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411918B8966600BC62E1 /* SCHorizontalLineView.m */; };
+		0D1041B318B8966700BC62E1 /* SCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411B18B8966600BC62E1 /* SCLoginView.m */; };
+		0D1041B418B8966700BC62E1 /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411D18B8966600BC62E1 /* SCLoginViewController.m */; };
+		0D1041B518B8966700BC62E1 /* SCNameAndEmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10411F18B8966600BC62E1 /* SCNameAndEmailCell.m */; };
+		0D1041B618B8966700BC62E1 /* SCRecordingSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412118B8966600BC62E1 /* SCRecordingSaveViewController.m */; };
+		0D1041B718B8966700BC62E1 /* SCRecordingSaveViewControllerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412318B8966600BC62E1 /* SCRecordingSaveViewControllerHeaderView.m */; };
+		0D1041B818B8966700BC62E1 /* SCRecordingUploadProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412518B8966600BC62E1 /* SCRecordingUploadProgressView.m */; };
+		0D1041B918B8966700BC62E1 /* SCShareToSoundCloudTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412718B8966600BC62E1 /* SCShareToSoundCloudTitleView.m */; };
+		0D1041BA18B8966700BC62E1 /* SCShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412918B8966600BC62E1 /* SCShareViewController.m */; };
+		0D1041BB18B8966700BC62E1 /* SCSharingMailPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412B18B8966600BC62E1 /* SCSharingMailPickerController.m */; };
+		0D1041BC18B8966700BC62E1 /* SCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412D18B8966600BC62E1 /* SCSwitch.m */; };
+		0D1041BD18B8966700BC62E1 /* SCSwitchLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10412F18B8966600BC62E1 /* SCSwitchLabel.m */; };
+		0D1041BE18B8966700BC62E1 /* SCTableCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10413118B8966600BC62E1 /* SCTableCellBackgroundView.m */; };
+		0D1041BF18B8966700BC62E1 /* SCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10413318B8966600BC62E1 /* SCTextField.m */; };
+		0D1041C018B8966700BC62E1 /* SCUIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10413618B8966600BC62E1 /* SCUIErrors.m */; };
+		0D1041C118B8966700BC62E1 /* SCUnderlinedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10413818B8966600BC62E1 /* SCUnderlinedButton.m */; };
+		0D1041C218B8966700BC62E1 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10413B18B8966600BC62E1 /* CHANGELOG.md */; };
+		0D1041C318B8966700BC62E1 /* JSONKit-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D10413D18B8966600BC62E1 /* JSONKit-Info.plist */; };
+		0D1041C418B8966700BC62E1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10414018B8966600BC62E1 /* JSONKit.m */; };
+		0D1041C518B8966700BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414418B8966600BC62E1 /* README.md */; };
+		0D1041C618B8966700BC62E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414618B8966600BC62E1 /* .gitignore */; };
+		0D1041C718B8966700BC62E1 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414718B8966600BC62E1 /* .gitmodules */; };
+		0D1041C818B8966700BC62E1 /* NXOAuth2Client.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414918B8966600BC62E1 /* NXOAuth2Client.md */; };
+		0D1041C918B8966700BC62E1 /* NXOAuth2Client.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414A18B8966600BC62E1 /* NXOAuth2Client.podspec */; };
+		0D1041CA18B8966700BC62E1 /* OAuth2Client.framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414B18B8966700BC62E1 /* OAuth2Client.framework-Info.plist */; };
+		0D1041CB18B8966700BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414F18B8966700BC62E1 /* README.md */; };
+		0D1041CC18B8966700BC62E1 /* NSData+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415218B8966700BC62E1 /* NSData+NXOAuth2.m */; };
+		0D1041CD18B8966700BC62E1 /* NSString+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415418B8966700BC62E1 /* NSString+NXOAuth2.m */; };
+		0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415618B8966700BC62E1 /* NSURL+NXOAuth2.m */; };
+		0D1041CF18B8966700BC62E1 /* NXOAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415A18B8966700BC62E1 /* NXOAuth2AccessToken.m */; };
+		0D1041D018B8966700BC62E1 /* NXOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415C18B8966700BC62E1 /* NXOAuth2Account.m */; };
+		0D1041D118B8966700BC62E1 /* NXOAuth2AccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415E18B8966700BC62E1 /* NXOAuth2AccountStore.m */; };
+		0D1041D218B8966700BC62E1 /* NXOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416018B8966700BC62E1 /* NXOAuth2Client.m */; };
+		0D1041D318B8966700BC62E1 /* NXOAuth2Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416318B8966700BC62E1 /* NXOAuth2Connection.m */; };
+		0D1041D418B8966700BC62E1 /* NXOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416618B8966700BC62E1 /* NXOAuth2Constants.m */; };
+		0D1041D518B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416818B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m */; };
+		0D1041D618B8966700BC62E1 /* NXOAuth2PostBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416A18B8966700BC62E1 /* NXOAuth2PostBodyPart.m */; };
+		0D1041D718B8966700BC62E1 /* NXOAuth2PostBodyStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416C18B8966700BC62E1 /* NXOAuth2PostBodyStream.m */; };
+		0D1041D818B8966700BC62E1 /* NXOAuth2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416E18B8966700BC62E1 /* NXOAuth2Request.m */; };
+		0D1041D918B8966700BC62E1 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417218B8966700BC62E1 /* .gitattributes */; };
+		0D1041DA18B8966700BC62E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417318B8966700BC62E1 /* .gitignore */; };
+		0D1041DB18B8966700BC62E1 /* AttributedLabel_Example-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417818B8966700BC62E1 /* AttributedLabel_Example-Info.plist */; };
+		0D1041DC18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10417C18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.m */; };
+		0D1041DD18B8966700BC62E1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417D18B8966700BC62E1 /* Icon.png */; };
+		0D1041DE18B8966700BC62E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10417E18B8966700BC62E1 /* main.m */; };
+		0D1041DF18B8966700BC62E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417F18B8966700BC62E1 /* MainWindow.xib */; };
+		0D1041E018B8966700BC62E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0D10418018B8966700BC62E1 /* LICENSE */; };
+		0D1041E118B8966700BC62E1 /* NSAttributedString+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10418318B8966700BC62E1 /* NSAttributedString+Attributes.m */; };
+		0D1041E218B8966700BC62E1 /* OHAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10418618B8966700BC62E1 /* OHAttributedLabel.m */; };
+		0D1041E318B8966700BC62E1 /* OHAttributedLabel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0D10418718B8966700BC62E1 /* OHAttributedLabel.podspec */; };
+		0D1041E418B8966700BC62E1 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0D10418B18B8966700BC62E1 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +119,76 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0D10409018B88DDD00BC62E1;
 			remoteInfo = SingalongWorld;
+		};
+		0D1041E618B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10417518B8966700BC62E1 /* AttributedLabel Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "AttributedLabel Example";
+		};
+		0D1041EA18B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10414118B8966600BC62E1 /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6803523148F6D22008A51BA;
+			remoteInfo = libJSONKit;
+		};
+		0D1041EC18B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10414118B8966600BC62E1 /* JSONKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6AE0202148F825C0004909F;
+			remoteInfo = JSONKit.framework;
+		};
+		0D1041F018B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10414C18B8966700BC62E1 /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 942FFCD612315E0A00E6C65E;
+			remoteInfo = OAuth2Client.framework;
+		};
+		0D1041F218B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10414C18B8966700BC62E1 /* OAuth2Client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = OAuth2Client;
+		};
+		0D1041F518B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D10418818B8966700BC62E1 /* OHAttributedLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62728FA148F70DF00314599;
+			remoteInfo = OHAttributedLabel;
+		};
+		0D1041F918B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D1040D318B8966600BC62E1 /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 94535F86123FAFDF00BD668A;
+			remoteInfo = SoundCloudAPI.framework;
+		};
+		0D1041FB18B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D1040D318B8966600BC62E1 /* SoundCloudAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SoundCloudAPI;
+		};
+		0D1041FF18B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D1040EE18B8966600BC62E1 /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6EF8C6113F929D700B20B40;
+			remoteInfo = libSoundCloudUI;
+		};
+		0D10420118B8966800BC62E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D1040EE18B8966600BC62E1 /* SoundCloudUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62E0CE5148FB27100BE8F14;
+			remoteInfo = SoundCloudUI.framework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +212,173 @@
 		0D1040BB18B88DDD00BC62E1 /* SingalongWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingalongWorldTests-Info.plist"; sourceTree = "<group>"; };
 		0D1040BD18B88DDD00BC62E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D1040BF18B88DDD00BC62E1 /* SingalongWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingalongWorldTests.m; sourceTree = "<group>"; };
+		0D1040CA18B8966600BC62E1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0D1040CB18B8966600BC62E1 /* Changes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changes.md; sourceTree = "<group>"; };
+		0D1040CC18B8966600BC62E1 /* GeneralUsage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeneralUsage.md; sourceTree = "<group>"; };
+		0D1040CD18B8966600BC62E1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0D1040CE18B8966600BC62E1 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		0D1040CF18B8966600BC62E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0D1040D018B8966600BC62E1 /* Setup.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Setup.md; sourceTree = "<group>"; };
+		0D1040D118B8966600BC62E1 /* Sharing.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sharing.md; sourceTree = "<group>"; };
+		0D1040D218B8966600BC62E1 /* SoundCloudAPI.framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SoundCloudAPI.framework-Info.plist"; sourceTree = "<group>"; };
+		0D1040D318B8966600BC62E1 /* SoundCloudAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoundCloudAPI.xcodeproj; sourceTree = "<group>"; };
+		0D1040D818B8966600BC62E1 /* SCAccount+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCAccount+Private.h"; sourceTree = "<group>"; };
+		0D1040D918B8966600BC62E1 /* SCAccount+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCAccount+Private.m"; sourceTree = "<group>"; };
+		0D1040DA18B8966600BC62E1 /* SCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAccount.h; sourceTree = "<group>"; };
+		0D1040DB18B8966600BC62E1 /* SCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAccount.m; sourceTree = "<group>"; };
+		0D1040DC18B8966600BC62E1 /* SCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAPI.h; sourceTree = "<group>"; };
+		0D1040DD18B8966600BC62E1 /* SCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConstants.h; sourceTree = "<group>"; };
+		0D1040DE18B8966600BC62E1 /* SCConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConstants.m; sourceTree = "<group>"; };
+		0D1040DF18B8966600BC62E1 /* SCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRequest.h; sourceTree = "<group>"; };
+		0D1040E018B8966600BC62E1 /* SCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRequest.m; sourceTree = "<group>"; };
+		0D1040E118B8966600BC62E1 /* SCSoundCloud+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloud+Private.h"; sourceTree = "<group>"; };
+		0D1040E218B8966600BC62E1 /* SCSoundCloud+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCSoundCloud+Private.m"; sourceTree = "<group>"; };
+		0D1040E318B8966600BC62E1 /* SCSoundCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSoundCloud.h; sourceTree = "<group>"; };
+		0D1040E418B8966600BC62E1 /* SCSoundCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSoundCloud.m; sourceTree = "<group>"; };
+		0D1040E518B8966600BC62E1 /* SCSoundCloudAPI-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCSoundCloudAPI-Private.h"; sourceTree = "<group>"; };
+		0D1040E618B8966600BC62E1 /* SoundCloudAPI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudAPI_Prefix.pch; sourceTree = "<group>"; };
+		0D1040E818B8966600BC62E1 /* CocoaSoundCloudUI.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CocoaSoundCloudUI.podspec; sourceTree = "<group>"; };
+		0D1040E918B8966600BC62E1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0D1040EA18B8966600BC62E1 /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		0D1040EB18B8966600BC62E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0D1040EC18B8966600BC62E1 /* SoundCloud.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SoundCloud.bundle; sourceTree = "<group>"; };
+		0D1040ED18B8966600BC62E1 /* SoundCloudUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SoundCloudUI-Info.plist"; sourceTree = "<group>"; };
+		0D1040EE18B8966600BC62E1 /* SoundCloudUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SoundCloudUI.xcodeproj; sourceTree = "<group>"; };
+		0D1040F318B8966600BC62E1 /* NSData+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040F418B8966600BC62E1 /* NSData+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040F518B8966600BC62E1 /* NSString+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040F618B8966600BC62E1 /* NSString+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040F718B8966600BC62E1 /* QuartzCore+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QuartzCore+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040F818B8966600BC62E1 /* QuartzCore+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QuartzCore+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040F918B8966600BC62E1 /* UIColor+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040FA18B8966600BC62E1 /* UIColor+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040FB18B8966600BC62E1 /* UIDevice+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040FC18B8966600BC62E1 /* UIDevice+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040FD18B8966600BC62E1 /* UIImage+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D1040FE18B8966600BC62E1 /* UIImage+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D1040FF18B8966600BC62E1 /* UIView+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D10410018B8966600BC62E1 /* UIView+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D10410118B8966600BC62E1 /* UIViewController+SoundCloudUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SoundCloudUI.h"; sourceTree = "<group>"; };
+		0D10410218B8966600BC62E1 /* UIViewController+SoundCloudUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SoundCloudUI.m"; sourceTree = "<group>"; };
+		0D10410418B8966600BC62E1 /* SCAddConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewController.h; sourceTree = "<group>"; };
+		0D10410518B8966600BC62E1 /* SCAddConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAddConnectionViewController.m; sourceTree = "<group>"; };
+		0D10410618B8966600BC62E1 /* SCAddConnectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAddConnectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		0D10410718B8966600BC62E1 /* SCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAlertView.h; sourceTree = "<group>"; };
+		0D10410818B8966600BC62E1 /* SCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAlertView.m; sourceTree = "<group>"; };
+		0D10410918B8966600BC62E1 /* SCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBundle.h; sourceTree = "<group>"; };
+		0D10410A18B8966600BC62E1 /* SCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBundle.m; sourceTree = "<group>"; };
+		0D10410B18B8966600BC62E1 /* SCConnectToSoundCloudTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConnectToSoundCloudTitleView.h; sourceTree = "<group>"; };
+		0D10410C18B8966600BC62E1 /* SCConnectToSoundCloudTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConnectToSoundCloudTitleView.m; sourceTree = "<group>"; };
+		0D10410D18B8966600BC62E1 /* SCCoverImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCoverImageButton.h; sourceTree = "<group>"; };
+		0D10410E18B8966600BC62E1 /* SCCoverImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCoverImageButton.m; sourceTree = "<group>"; };
+		0D10410F18B8966600BC62E1 /* SCCredentialsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCredentialsView.h; sourceTree = "<group>"; };
+		0D10411018B8966600BC62E1 /* SCCredentialsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCredentialsView.m; sourceTree = "<group>"; };
+		0D10411118B8966600BC62E1 /* SCDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDrawing.h; sourceTree = "<group>"; };
+		0D10411218B8966600BC62E1 /* SCDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDrawing.m; sourceTree = "<group>"; };
+		0D10411318B8966600BC62E1 /* SCFoursquarePlacePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerController.h; sourceTree = "<group>"; };
+		0D10411418B8966600BC62E1 /* SCFoursquarePlacePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFoursquarePlacePickerController.m; sourceTree = "<group>"; };
+		0D10411518B8966600BC62E1 /* SCFoursquarePlacePickerControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFoursquarePlacePickerControllerDelegate.h; sourceTree = "<group>"; };
+		0D10411618B8966600BC62E1 /* SCGradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGradientButton.h; sourceTree = "<group>"; };
+		0D10411718B8966600BC62E1 /* SCGradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGradientButton.m; sourceTree = "<group>"; };
+		0D10411818B8966600BC62E1 /* SCHorizontalLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHorizontalLineView.h; sourceTree = "<group>"; };
+		0D10411918B8966600BC62E1 /* SCHorizontalLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHorizontalLineView.m; sourceTree = "<group>"; };
+		0D10411A18B8966600BC62E1 /* SCLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginView.h; sourceTree = "<group>"; };
+		0D10411B18B8966600BC62E1 /* SCLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginView.m; sourceTree = "<group>"; };
+		0D10411C18B8966600BC62E1 /* SCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
+		0D10411D18B8966600BC62E1 /* SCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
+		0D10411E18B8966600BC62E1 /* SCNameAndEmailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNameAndEmailCell.h; sourceTree = "<group>"; };
+		0D10411F18B8966600BC62E1 /* SCNameAndEmailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNameAndEmailCell.m; sourceTree = "<group>"; };
+		0D10412018B8966600BC62E1 /* SCRecordingSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewController.h; sourceTree = "<group>"; };
+		0D10412118B8966600BC62E1 /* SCRecordingSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewController.m; sourceTree = "<group>"; };
+		0D10412218B8966600BC62E1 /* SCRecordingSaveViewControllerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingSaveViewControllerHeaderView.h; sourceTree = "<group>"; };
+		0D10412318B8966600BC62E1 /* SCRecordingSaveViewControllerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingSaveViewControllerHeaderView.m; sourceTree = "<group>"; };
+		0D10412418B8966600BC62E1 /* SCRecordingUploadProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordingUploadProgressView.h; sourceTree = "<group>"; };
+		0D10412518B8966600BC62E1 /* SCRecordingUploadProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordingUploadProgressView.m; sourceTree = "<group>"; };
+		0D10412618B8966600BC62E1 /* SCShareToSoundCloudTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShareToSoundCloudTitleView.h; sourceTree = "<group>"; };
+		0D10412718B8966600BC62E1 /* SCShareToSoundCloudTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShareToSoundCloudTitleView.m; sourceTree = "<group>"; };
+		0D10412818B8966600BC62E1 /* SCShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShareViewController.h; sourceTree = "<group>"; };
+		0D10412918B8966600BC62E1 /* SCShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShareViewController.m; sourceTree = "<group>"; };
+		0D10412A18B8966600BC62E1 /* SCSharingMailPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSharingMailPickerController.h; sourceTree = "<group>"; };
+		0D10412B18B8966600BC62E1 /* SCSharingMailPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSharingMailPickerController.m; sourceTree = "<group>"; };
+		0D10412C18B8966600BC62E1 /* SCSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwitch.h; sourceTree = "<group>"; };
+		0D10412D18B8966600BC62E1 /* SCSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwitch.m; sourceTree = "<group>"; };
+		0D10412E18B8966600BC62E1 /* SCSwitchLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwitchLabel.h; sourceTree = "<group>"; };
+		0D10412F18B8966600BC62E1 /* SCSwitchLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwitchLabel.m; sourceTree = "<group>"; };
+		0D10413018B8966600BC62E1 /* SCTableCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTableCellBackgroundView.h; sourceTree = "<group>"; };
+		0D10413118B8966600BC62E1 /* SCTableCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTableCellBackgroundView.m; sourceTree = "<group>"; };
+		0D10413218B8966600BC62E1 /* SCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTextField.h; sourceTree = "<group>"; };
+		0D10413318B8966600BC62E1 /* SCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTextField.m; sourceTree = "<group>"; };
+		0D10413418B8966600BC62E1 /* SCUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUI.h; sourceTree = "<group>"; };
+		0D10413518B8966600BC62E1 /* SCUIErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUIErrors.h; sourceTree = "<group>"; };
+		0D10413618B8966600BC62E1 /* SCUIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUIErrors.m; sourceTree = "<group>"; };
+		0D10413718B8966600BC62E1 /* SCUnderlinedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUnderlinedButton.h; sourceTree = "<group>"; };
+		0D10413818B8966600BC62E1 /* SCUnderlinedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUnderlinedButton.m; sourceTree = "<group>"; };
+		0D10413918B8966600BC62E1 /* SoundCloudUI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SoundCloudUI-Prefix.pch"; sourceTree = "<group>"; };
+		0D10413B18B8966600BC62E1 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0D10413D18B8966600BC62E1 /* JSONKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JSONKit-Info.plist"; sourceTree = "<group>"; };
+		0D10413E18B8966600BC62E1 /* JSONKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONKit-Prefix.pch"; sourceTree = "<group>"; };
+		0D10413F18B8966600BC62E1 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		0D10414018B8966600BC62E1 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		0D10414118B8966600BC62E1 /* JSONKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = JSONKit.xcodeproj; sourceTree = "<group>"; };
+		0D10414418B8966600BC62E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0D10414618B8966600BC62E1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0D10414718B8966600BC62E1 /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		0D10414818B8966600BC62E1 /* NXOAuth2Account+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NXOAuth2Account+Private.h"; sourceTree = "<group>"; };
+		0D10414918B8966600BC62E1 /* NXOAuth2Client.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NXOAuth2Client.md; sourceTree = "<group>"; };
+		0D10414A18B8966600BC62E1 /* NXOAuth2Client.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NXOAuth2Client.podspec; sourceTree = "<group>"; };
+		0D10414B18B8966700BC62E1 /* OAuth2Client.framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OAuth2Client.framework-Info.plist"; sourceTree = "<group>"; };
+		0D10414C18B8966700BC62E1 /* OAuth2Client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OAuth2Client.xcodeproj; sourceTree = "<group>"; };
+		0D10414F18B8966700BC62E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0D10415118B8966700BC62E1 /* NSData+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+NXOAuth2.h"; sourceTree = "<group>"; };
+		0D10415218B8966700BC62E1 /* NSData+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+NXOAuth2.m"; sourceTree = "<group>"; };
+		0D10415318B8966700BC62E1 /* NSString+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NXOAuth2.h"; sourceTree = "<group>"; };
+		0D10415418B8966700BC62E1 /* NSString+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NXOAuth2.m"; sourceTree = "<group>"; };
+		0D10415518B8966700BC62E1 /* NSURL+NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+NXOAuth2.h"; sourceTree = "<group>"; };
+		0D10415618B8966700BC62E1 /* NSURL+NXOAuth2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NXOAuth2.m"; sourceTree = "<group>"; };
+		0D10415818B8966700BC62E1 /* NXOAuth2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2.h; sourceTree = "<group>"; };
+		0D10415918B8966700BC62E1 /* NXOAuth2AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccessToken.h; sourceTree = "<group>"; };
+		0D10415A18B8966700BC62E1 /* NXOAuth2AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccessToken.m; sourceTree = "<group>"; };
+		0D10415B18B8966700BC62E1 /* NXOAuth2Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Account.h; sourceTree = "<group>"; };
+		0D10415C18B8966700BC62E1 /* NXOAuth2Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Account.m; sourceTree = "<group>"; };
+		0D10415D18B8966700BC62E1 /* NXOAuth2AccountStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2AccountStore.h; sourceTree = "<group>"; };
+		0D10415E18B8966700BC62E1 /* NXOAuth2AccountStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2AccountStore.m; sourceTree = "<group>"; };
+		0D10415F18B8966700BC62E1 /* NXOAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Client.h; sourceTree = "<group>"; };
+		0D10416018B8966700BC62E1 /* NXOAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Client.m; sourceTree = "<group>"; };
+		0D10416118B8966700BC62E1 /* NXOAuth2ClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ClientDelegate.h; sourceTree = "<group>"; };
+		0D10416218B8966700BC62E1 /* NXOAuth2Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Connection.h; sourceTree = "<group>"; };
+		0D10416318B8966700BC62E1 /* NXOAuth2Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Connection.m; sourceTree = "<group>"; };
+		0D10416418B8966700BC62E1 /* NXOAuth2ConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2ConnectionDelegate.h; sourceTree = "<group>"; };
+		0D10416518B8966700BC62E1 /* NXOAuth2Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Constants.h; sourceTree = "<group>"; };
+		0D10416618B8966700BC62E1 /* NXOAuth2Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Constants.m; sourceTree = "<group>"; };
+		0D10416718B8966700BC62E1 /* NXOAuth2FileStreamWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2FileStreamWrapper.h; sourceTree = "<group>"; };
+		0D10416818B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2FileStreamWrapper.m; sourceTree = "<group>"; };
+		0D10416918B8966700BC62E1 /* NXOAuth2PostBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyPart.h; sourceTree = "<group>"; };
+		0D10416A18B8966700BC62E1 /* NXOAuth2PostBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyPart.m; sourceTree = "<group>"; };
+		0D10416B18B8966700BC62E1 /* NXOAuth2PostBodyStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2PostBodyStream.h; sourceTree = "<group>"; };
+		0D10416C18B8966700BC62E1 /* NXOAuth2PostBodyStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2PostBodyStream.m; sourceTree = "<group>"; };
+		0D10416D18B8966700BC62E1 /* NXOAuth2Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2Request.h; sourceTree = "<group>"; };
+		0D10416E18B8966700BC62E1 /* NXOAuth2Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXOAuth2Request.m; sourceTree = "<group>"; };
+		0D10416F18B8966700BC62E1 /* NXOAuth2TrustDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXOAuth2TrustDelegate.h; sourceTree = "<group>"; };
+		0D10417018B8966700BC62E1 /* OAuth2Client_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth2Client_Prefix.pch; sourceTree = "<group>"; };
+		0D10417218B8966700BC62E1 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		0D10417318B8966700BC62E1 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0D10417518B8966700BC62E1 /* AttributedLabel Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "AttributedLabel Example.xcodeproj"; sourceTree = "<group>"; };
+		0D10417818B8966700BC62E1 /* AttributedLabel_Example-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AttributedLabel_Example-Info.plist"; sourceTree = "<group>"; };
+		0D10417918B8966700BC62E1 /* AttributedLabel_Example_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabel_Example_Prefix.pch; sourceTree = "<group>"; };
+		0D10417B18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabel_ExampleAppDelegate.h; sourceTree = "<group>"; };
+		0D10417C18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabel_ExampleAppDelegate.m; sourceTree = "<group>"; };
+		0D10417D18B8966700BC62E1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		0D10417E18B8966700BC62E1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D10417F18B8966700BC62E1 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		0D10418018B8966700BC62E1 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0D10418218B8966700BC62E1 /* NSAttributedString+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Attributes.h"; sourceTree = "<group>"; };
+		0D10418318B8966700BC62E1 /* NSAttributedString+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Attributes.m"; sourceTree = "<group>"; };
+		0D10418418B8966700BC62E1 /* OHAttributedLabel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OHAttributedLabel-Prefix.pch"; sourceTree = "<group>"; };
+		0D10418518B8966700BC62E1 /* OHAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHAttributedLabel.h; sourceTree = "<group>"; };
+		0D10418618B8966700BC62E1 /* OHAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAttributedLabel.m; sourceTree = "<group>"; };
+		0D10418718B8966700BC62E1 /* OHAttributedLabel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OHAttributedLabel.podspec; sourceTree = "<group>"; };
+		0D10418818B8966700BC62E1 /* OHAttributedLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OHAttributedLabel.xcodeproj; sourceTree = "<group>"; };
+		0D10418B18B8966700BC62E1 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +408,11 @@
 		0D10408818B88DDD00BC62E1 = {
 			isa = PBXGroup;
 			children = (
+				0D1040C918B8966600BC62E1 /* CocoaSoundCloudAPI */,
+				0D1040E718B8966600BC62E1 /* CocoaSoundCloudUI */,
+				0D10413A18B8966600BC62E1 /* JSONKit */,
+				0D10414518B8966600BC62E1 /* OAuth2Client */,
+				0D10417118B8966700BC62E1 /* OHAttributedLabel */,
 				0D10409A18B88DDD00BC62E1 /* SingalongWorld */,
 				0D1040B918B88DDD00BC62E1 /* SingalongWorldTests */,
 				0D10409318B88DDD00BC62E1 /* Frameworks */,
@@ -152,6 +483,348 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0D1040C918B8966600BC62E1 /* CocoaSoundCloudAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040CA18B8966600BC62E1 /* .gitignore */,
+				0D1040CB18B8966600BC62E1 /* Changes.md */,
+				0D1040CC18B8966600BC62E1 /* GeneralUsage.md */,
+				0D1040CD18B8966600BC62E1 /* LICENSE */,
+				0D1040CE18B8966600BC62E1 /* NOTICE */,
+				0D1040CF18B8966600BC62E1 /* README.md */,
+				0D1040D018B8966600BC62E1 /* Setup.md */,
+				0D1040D118B8966600BC62E1 /* Sharing.md */,
+				0D1040D218B8966600BC62E1 /* SoundCloudAPI.framework-Info.plist */,
+				0D1040D318B8966600BC62E1 /* SoundCloudAPI.xcodeproj */,
+				0D1040D618B8966600BC62E1 /* Sources */,
+			);
+			path = CocoaSoundCloudAPI;
+			sourceTree = "<group>";
+		};
+		0D1040D418B8966600BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D1041FA18B8966800BC62E1 /* SoundCloudAPI.framework */,
+				0D1041FC18B8966800BC62E1 /* libSoundCloudAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D1040D618B8966600BC62E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040D718B8966600BC62E1 /* SoundCloudAPI */,
+				0D1040E618B8966600BC62E1 /* SoundCloudAPI_Prefix.pch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0D1040D718B8966600BC62E1 /* SoundCloudAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040D818B8966600BC62E1 /* SCAccount+Private.h */,
+				0D1040D918B8966600BC62E1 /* SCAccount+Private.m */,
+				0D1040DA18B8966600BC62E1 /* SCAccount.h */,
+				0D1040DB18B8966600BC62E1 /* SCAccount.m */,
+				0D1040DC18B8966600BC62E1 /* SCAPI.h */,
+				0D1040DD18B8966600BC62E1 /* SCConstants.h */,
+				0D1040DE18B8966600BC62E1 /* SCConstants.m */,
+				0D1040DF18B8966600BC62E1 /* SCRequest.h */,
+				0D1040E018B8966600BC62E1 /* SCRequest.m */,
+				0D1040E118B8966600BC62E1 /* SCSoundCloud+Private.h */,
+				0D1040E218B8966600BC62E1 /* SCSoundCloud+Private.m */,
+				0D1040E318B8966600BC62E1 /* SCSoundCloud.h */,
+				0D1040E418B8966600BC62E1 /* SCSoundCloud.m */,
+				0D1040E518B8966600BC62E1 /* SCSoundCloudAPI-Private.h */,
+			);
+			path = SoundCloudAPI;
+			sourceTree = "<group>";
+		};
+		0D1040E718B8966600BC62E1 /* CocoaSoundCloudUI */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040E818B8966600BC62E1 /* CocoaSoundCloudUI.podspec */,
+				0D1040E918B8966600BC62E1 /* LICENSE */,
+				0D1040EA18B8966600BC62E1 /* NOTICE */,
+				0D1040EB18B8966600BC62E1 /* README.md */,
+				0D1040EC18B8966600BC62E1 /* SoundCloud.bundle */,
+				0D1040ED18B8966600BC62E1 /* SoundCloudUI-Info.plist */,
+				0D1040EE18B8966600BC62E1 /* SoundCloudUI.xcodeproj */,
+				0D1040F118B8966600BC62E1 /* Sources */,
+			);
+			path = CocoaSoundCloudUI;
+			sourceTree = "<group>";
+		};
+		0D1040EF18B8966600BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D10420018B8966800BC62E1 /* libSoundCloudUI.a */,
+				0D10420218B8966800BC62E1 /* SoundCloudUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D1040F118B8966600BC62E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040F218B8966600BC62E1 /* CocoaAdditions */,
+				0D10410318B8966600BC62E1 /* SoundCloudUI */,
+				0D10413918B8966600BC62E1 /* SoundCloudUI-Prefix.pch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0D1040F218B8966600BC62E1 /* CocoaAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				0D1040F318B8966600BC62E1 /* NSData+SoundCloudUI.h */,
+				0D1040F418B8966600BC62E1 /* NSData+SoundCloudUI.m */,
+				0D1040F518B8966600BC62E1 /* NSString+SoundCloudUI.h */,
+				0D1040F618B8966600BC62E1 /* NSString+SoundCloudUI.m */,
+				0D1040F718B8966600BC62E1 /* QuartzCore+SoundCloudUI.h */,
+				0D1040F818B8966600BC62E1 /* QuartzCore+SoundCloudUI.m */,
+				0D1040F918B8966600BC62E1 /* UIColor+SoundCloudUI.h */,
+				0D1040FA18B8966600BC62E1 /* UIColor+SoundCloudUI.m */,
+				0D1040FB18B8966600BC62E1 /* UIDevice+SoundCloudUI.h */,
+				0D1040FC18B8966600BC62E1 /* UIDevice+SoundCloudUI.m */,
+				0D1040FD18B8966600BC62E1 /* UIImage+SoundCloudUI.h */,
+				0D1040FE18B8966600BC62E1 /* UIImage+SoundCloudUI.m */,
+				0D1040FF18B8966600BC62E1 /* UIView+SoundCloudUI.h */,
+				0D10410018B8966600BC62E1 /* UIView+SoundCloudUI.m */,
+				0D10410118B8966600BC62E1 /* UIViewController+SoundCloudUI.h */,
+				0D10410218B8966600BC62E1 /* UIViewController+SoundCloudUI.m */,
+			);
+			path = CocoaAdditions;
+			sourceTree = "<group>";
+		};
+		0D10410318B8966600BC62E1 /* SoundCloudUI */ = {
+			isa = PBXGroup;
+			children = (
+				0D10410418B8966600BC62E1 /* SCAddConnectionViewController.h */,
+				0D10410518B8966600BC62E1 /* SCAddConnectionViewController.m */,
+				0D10410618B8966600BC62E1 /* SCAddConnectionViewControllerDelegate.h */,
+				0D10410718B8966600BC62E1 /* SCAlertView.h */,
+				0D10410818B8966600BC62E1 /* SCAlertView.m */,
+				0D10410918B8966600BC62E1 /* SCBundle.h */,
+				0D10410A18B8966600BC62E1 /* SCBundle.m */,
+				0D10410B18B8966600BC62E1 /* SCConnectToSoundCloudTitleView.h */,
+				0D10410C18B8966600BC62E1 /* SCConnectToSoundCloudTitleView.m */,
+				0D10410D18B8966600BC62E1 /* SCCoverImageButton.h */,
+				0D10410E18B8966600BC62E1 /* SCCoverImageButton.m */,
+				0D10410F18B8966600BC62E1 /* SCCredentialsView.h */,
+				0D10411018B8966600BC62E1 /* SCCredentialsView.m */,
+				0D10411118B8966600BC62E1 /* SCDrawing.h */,
+				0D10411218B8966600BC62E1 /* SCDrawing.m */,
+				0D10411318B8966600BC62E1 /* SCFoursquarePlacePickerController.h */,
+				0D10411418B8966600BC62E1 /* SCFoursquarePlacePickerController.m */,
+				0D10411518B8966600BC62E1 /* SCFoursquarePlacePickerControllerDelegate.h */,
+				0D10411618B8966600BC62E1 /* SCGradientButton.h */,
+				0D10411718B8966600BC62E1 /* SCGradientButton.m */,
+				0D10411818B8966600BC62E1 /* SCHorizontalLineView.h */,
+				0D10411918B8966600BC62E1 /* SCHorizontalLineView.m */,
+				0D10411A18B8966600BC62E1 /* SCLoginView.h */,
+				0D10411B18B8966600BC62E1 /* SCLoginView.m */,
+				0D10411C18B8966600BC62E1 /* SCLoginViewController.h */,
+				0D10411D18B8966600BC62E1 /* SCLoginViewController.m */,
+				0D10411E18B8966600BC62E1 /* SCNameAndEmailCell.h */,
+				0D10411F18B8966600BC62E1 /* SCNameAndEmailCell.m */,
+				0D10412018B8966600BC62E1 /* SCRecordingSaveViewController.h */,
+				0D10412118B8966600BC62E1 /* SCRecordingSaveViewController.m */,
+				0D10412218B8966600BC62E1 /* SCRecordingSaveViewControllerHeaderView.h */,
+				0D10412318B8966600BC62E1 /* SCRecordingSaveViewControllerHeaderView.m */,
+				0D10412418B8966600BC62E1 /* SCRecordingUploadProgressView.h */,
+				0D10412518B8966600BC62E1 /* SCRecordingUploadProgressView.m */,
+				0D10412618B8966600BC62E1 /* SCShareToSoundCloudTitleView.h */,
+				0D10412718B8966600BC62E1 /* SCShareToSoundCloudTitleView.m */,
+				0D10412818B8966600BC62E1 /* SCShareViewController.h */,
+				0D10412918B8966600BC62E1 /* SCShareViewController.m */,
+				0D10412A18B8966600BC62E1 /* SCSharingMailPickerController.h */,
+				0D10412B18B8966600BC62E1 /* SCSharingMailPickerController.m */,
+				0D10412C18B8966600BC62E1 /* SCSwitch.h */,
+				0D10412D18B8966600BC62E1 /* SCSwitch.m */,
+				0D10412E18B8966600BC62E1 /* SCSwitchLabel.h */,
+				0D10412F18B8966600BC62E1 /* SCSwitchLabel.m */,
+				0D10413018B8966600BC62E1 /* SCTableCellBackgroundView.h */,
+				0D10413118B8966600BC62E1 /* SCTableCellBackgroundView.m */,
+				0D10413218B8966600BC62E1 /* SCTextField.h */,
+				0D10413318B8966600BC62E1 /* SCTextField.m */,
+				0D10413418B8966600BC62E1 /* SCUI.h */,
+				0D10413518B8966600BC62E1 /* SCUIErrors.h */,
+				0D10413618B8966600BC62E1 /* SCUIErrors.m */,
+				0D10413718B8966600BC62E1 /* SCUnderlinedButton.h */,
+				0D10413818B8966600BC62E1 /* SCUnderlinedButton.m */,
+			);
+			path = SoundCloudUI;
+			sourceTree = "<group>";
+		};
+		0D10413A18B8966600BC62E1 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				0D10413B18B8966600BC62E1 /* CHANGELOG.md */,
+				0D10413C18B8966600BC62E1 /* JSONKit */,
+				0D10414118B8966600BC62E1 /* JSONKit.xcodeproj */,
+				0D10414418B8966600BC62E1 /* README.md */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		0D10413C18B8966600BC62E1 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				0D10413D18B8966600BC62E1 /* JSONKit-Info.plist */,
+				0D10413E18B8966600BC62E1 /* JSONKit-Prefix.pch */,
+				0D10413F18B8966600BC62E1 /* JSONKit.h */,
+				0D10414018B8966600BC62E1 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		0D10414218B8966600BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D1041EB18B8966800BC62E1 /* libJSONKit.a */,
+				0D1041ED18B8966800BC62E1 /* JSONKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D10414518B8966600BC62E1 /* OAuth2Client */ = {
+			isa = PBXGroup;
+			children = (
+				0D10414618B8966600BC62E1 /* .gitignore */,
+				0D10414718B8966600BC62E1 /* .gitmodules */,
+				0D10414818B8966600BC62E1 /* NXOAuth2Account+Private.h */,
+				0D10414918B8966600BC62E1 /* NXOAuth2Client.md */,
+				0D10414A18B8966600BC62E1 /* NXOAuth2Client.podspec */,
+				0D10414B18B8966700BC62E1 /* OAuth2Client.framework-Info.plist */,
+				0D10414C18B8966700BC62E1 /* OAuth2Client.xcodeproj */,
+				0D10414F18B8966700BC62E1 /* README.md */,
+				0D10415018B8966700BC62E1 /* Sources */,
+			);
+			path = OAuth2Client;
+			sourceTree = "<group>";
+		};
+		0D10414D18B8966700BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D1041F118B8966800BC62E1 /* OAuth2Client.framework */,
+				0D1041F318B8966800BC62E1 /* libOAuth2Client.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D10415018B8966700BC62E1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0D10415118B8966700BC62E1 /* NSData+NXOAuth2.h */,
+				0D10415218B8966700BC62E1 /* NSData+NXOAuth2.m */,
+				0D10415318B8966700BC62E1 /* NSString+NXOAuth2.h */,
+				0D10415418B8966700BC62E1 /* NSString+NXOAuth2.m */,
+				0D10415518B8966700BC62E1 /* NSURL+NXOAuth2.h */,
+				0D10415618B8966700BC62E1 /* NSURL+NXOAuth2.m */,
+				0D10415718B8966700BC62E1 /* OAuth2Client */,
+				0D10417018B8966700BC62E1 /* OAuth2Client_Prefix.pch */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0D10415718B8966700BC62E1 /* OAuth2Client */ = {
+			isa = PBXGroup;
+			children = (
+				0D10415818B8966700BC62E1 /* NXOAuth2.h */,
+				0D10415918B8966700BC62E1 /* NXOAuth2AccessToken.h */,
+				0D10415A18B8966700BC62E1 /* NXOAuth2AccessToken.m */,
+				0D10415B18B8966700BC62E1 /* NXOAuth2Account.h */,
+				0D10415C18B8966700BC62E1 /* NXOAuth2Account.m */,
+				0D10415D18B8966700BC62E1 /* NXOAuth2AccountStore.h */,
+				0D10415E18B8966700BC62E1 /* NXOAuth2AccountStore.m */,
+				0D10415F18B8966700BC62E1 /* NXOAuth2Client.h */,
+				0D10416018B8966700BC62E1 /* NXOAuth2Client.m */,
+				0D10416118B8966700BC62E1 /* NXOAuth2ClientDelegate.h */,
+				0D10416218B8966700BC62E1 /* NXOAuth2Connection.h */,
+				0D10416318B8966700BC62E1 /* NXOAuth2Connection.m */,
+				0D10416418B8966700BC62E1 /* NXOAuth2ConnectionDelegate.h */,
+				0D10416518B8966700BC62E1 /* NXOAuth2Constants.h */,
+				0D10416618B8966700BC62E1 /* NXOAuth2Constants.m */,
+				0D10416718B8966700BC62E1 /* NXOAuth2FileStreamWrapper.h */,
+				0D10416818B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m */,
+				0D10416918B8966700BC62E1 /* NXOAuth2PostBodyPart.h */,
+				0D10416A18B8966700BC62E1 /* NXOAuth2PostBodyPart.m */,
+				0D10416B18B8966700BC62E1 /* NXOAuth2PostBodyStream.h */,
+				0D10416C18B8966700BC62E1 /* NXOAuth2PostBodyStream.m */,
+				0D10416D18B8966700BC62E1 /* NXOAuth2Request.h */,
+				0D10416E18B8966700BC62E1 /* NXOAuth2Request.m */,
+				0D10416F18B8966700BC62E1 /* NXOAuth2TrustDelegate.h */,
+			);
+			path = OAuth2Client;
+			sourceTree = "<group>";
+		};
+		0D10417118B8966700BC62E1 /* OHAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0D10417218B8966700BC62E1 /* .gitattributes */,
+				0D10417318B8966700BC62E1 /* .gitignore */,
+				0D10417418B8966700BC62E1 /* AttributedLabel Example */,
+				0D10418018B8966700BC62E1 /* LICENSE */,
+				0D10418118B8966700BC62E1 /* OHAttributedLabel */,
+				0D10418718B8966700BC62E1 /* OHAttributedLabel.podspec */,
+				0D10418818B8966700BC62E1 /* OHAttributedLabel.xcodeproj */,
+				0D10418B18B8966700BC62E1 /* README */,
+			);
+			path = OHAttributedLabel;
+			sourceTree = "<group>";
+		};
+		0D10417418B8966700BC62E1 /* AttributedLabel Example */ = {
+			isa = PBXGroup;
+			children = (
+				0D10417518B8966700BC62E1 /* AttributedLabel Example.xcodeproj */,
+				0D10417818B8966700BC62E1 /* AttributedLabel_Example-Info.plist */,
+				0D10417918B8966700BC62E1 /* AttributedLabel_Example_Prefix.pch */,
+				0D10417A18B8966700BC62E1 /* Classes */,
+				0D10417D18B8966700BC62E1 /* Icon.png */,
+				0D10417E18B8966700BC62E1 /* main.m */,
+				0D10417F18B8966700BC62E1 /* MainWindow.xib */,
+			);
+			path = "AttributedLabel Example";
+			sourceTree = "<group>";
+		};
+		0D10417618B8966700BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D1041E718B8966800BC62E1 /* AttribLbl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D10417A18B8966700BC62E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D10417B18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.h */,
+				0D10417C18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0D10418118B8966700BC62E1 /* OHAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0D10418218B8966700BC62E1 /* NSAttributedString+Attributes.h */,
+				0D10418318B8966700BC62E1 /* NSAttributedString+Attributes.m */,
+				0D10418418B8966700BC62E1 /* OHAttributedLabel-Prefix.pch */,
+				0D10418518B8966700BC62E1 /* OHAttributedLabel.h */,
+				0D10418618B8966700BC62E1 /* OHAttributedLabel.m */,
+			);
+			path = OHAttributedLabel;
+			sourceTree = "<group>";
+		};
+		0D10418918B8966700BC62E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D1041F618B8966800BC62E1 /* libOHAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,6 +889,32 @@
 			mainGroup = 0D10408818B88DDD00BC62E1;
 			productRefGroup = 0D10409218B88DDD00BC62E1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0D10417618B8966700BC62E1 /* Products */;
+					ProjectRef = 0D10417518B8966700BC62E1 /* AttributedLabel Example.xcodeproj */;
+				},
+				{
+					ProductGroup = 0D10414218B8966600BC62E1 /* Products */;
+					ProjectRef = 0D10414118B8966600BC62E1 /* JSONKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 0D10414D18B8966700BC62E1 /* Products */;
+					ProjectRef = 0D10414C18B8966700BC62E1 /* OAuth2Client.xcodeproj */;
+				},
+				{
+					ProductGroup = 0D10418918B8966700BC62E1 /* Products */;
+					ProjectRef = 0D10418818B8966700BC62E1 /* OHAttributedLabel.xcodeproj */;
+				},
+				{
+					ProductGroup = 0D1040D418B8966600BC62E1 /* Products */;
+					ProjectRef = 0D1040D318B8966600BC62E1 /* SoundCloudAPI.xcodeproj */;
+				},
+				{
+					ProductGroup = 0D1040EF18B8966600BC62E1 /* Products */;
+					ProjectRef = 0D1040EE18B8966600BC62E1 /* SoundCloudUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0D10409018B88DDD00BC62E1 /* SingalongWorld */,
@@ -224,14 +923,119 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		0D1041E718B8966800BC62E1 /* AttribLbl.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AttribLbl.app;
+			remoteRef = 0D1041E618B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041EB18B8966800BC62E1 /* libJSONKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libJSONKit.a;
+			remoteRef = 0D1041EA18B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041ED18B8966800BC62E1 /* JSONKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONKit.framework;
+			remoteRef = 0D1041EC18B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041F118B8966800BC62E1 /* OAuth2Client.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2Client.framework;
+			remoteRef = 0D1041F018B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041F318B8966800BC62E1 /* libOAuth2Client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOAuth2Client.a;
+			remoteRef = 0D1041F218B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041F618B8966800BC62E1 /* libOHAttributedLabel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOHAttributedLabel.a;
+			remoteRef = 0D1041F518B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041FA18B8966800BC62E1 /* SoundCloudAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudAPI.framework;
+			remoteRef = 0D1041F918B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D1041FC18B8966800BC62E1 /* libSoundCloudAPI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudAPI.a;
+			remoteRef = 0D1041FB18B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D10420018B8966800BC62E1 /* libSoundCloudUI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSoundCloudUI.a;
+			remoteRef = 0D1041FF18B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0D10420218B8966800BC62E1 /* SoundCloudUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SoundCloudUI.framework;
+			remoteRef = 0D10420118B8966800BC62E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		0D10408F18B88DDD00BC62E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1041DB18B8966700BC62E1 /* AttributedLabel_Example-Info.plist in Resources */,
+				0D1041C918B8966700BC62E1 /* NXOAuth2Client.podspec in Resources */,
+				0D1041DA18B8966700BC62E1 /* .gitignore in Resources */,
+				0D1041C818B8966700BC62E1 /* NXOAuth2Client.md in Resources */,
+				0D10419218B8966700BC62E1 /* Setup.md in Resources */,
+				0D10419018B8966700BC62E1 /* NOTICE in Resources */,
+				0D1041C218B8966700BC62E1 /* CHANGELOG.md in Resources */,
+				0D1041C518B8966700BC62E1 /* README.md in Resources */,
+				0D1041C718B8966700BC62E1 /* .gitmodules in Resources */,
+				0D1041C618B8966700BC62E1 /* .gitignore in Resources */,
+				0D1041E318B8966700BC62E1 /* OHAttributedLabel.podspec in Resources */,
+				0D1041CA18B8966700BC62E1 /* OAuth2Client.framework-Info.plist in Resources */,
+				0D10419318B8966700BC62E1 /* Sharing.md in Resources */,
+				0D10419B18B8966700BC62E1 /* CocoaSoundCloudUI.podspec in Resources */,
+				0D1041D918B8966700BC62E1 /* .gitattributes in Resources */,
+				0D1041DD18B8966700BC62E1 /* Icon.png in Resources */,
+				0D10418C18B8966700BC62E1 /* .gitignore in Resources */,
+				0D10419D18B8966700BC62E1 /* NOTICE in Resources */,
+				0D10419E18B8966700BC62E1 /* README.md in Resources */,
+				0D10418E18B8966700BC62E1 /* GeneralUsage.md in Resources */,
+				0D1041E418B8966700BC62E1 /* README in Resources */,
+				0D1041CB18B8966700BC62E1 /* README.md in Resources */,
 				0D1040AD18B88DDD00BC62E1 /* Images.xcassets in Resources */,
+				0D10418F18B8966700BC62E1 /* LICENSE in Resources */,
+				0D10419F18B8966700BC62E1 /* SoundCloud.bundle in Resources */,
 				0D10409F18B88DDD00BC62E1 /* InfoPlist.strings in Resources */,
+				0D10419118B8966700BC62E1 /* README.md in Resources */,
+				0D10419C18B8966700BC62E1 /* LICENSE in Resources */,
+				0D1041C318B8966700BC62E1 /* JSONKit-Info.plist in Resources */,
+				0D1041E018B8966700BC62E1 /* LICENSE in Resources */,
+				0D1041A018B8966700BC62E1 /* SoundCloudUI-Info.plist in Resources */,
+				0D1041DF18B8966700BC62E1 /* MainWindow.xib in Resources */,
+				0D10418D18B8966700BC62E1 /* Changes.md in Resources */,
 				0D1040A818B88DDD00BC62E1 /* Main.storyboard in Resources */,
+				0D10419418B8966700BC62E1 /* SoundCloudAPI.framework-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +1054,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1041AF18B8966700BC62E1 /* SCDrawing.m in Sources */,
+				0D1041D518B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m in Sources */,
+				0D1041BB18B8966700BC62E1 /* SCSharingMailPickerController.m in Sources */,
+				0D1041DC18B8966700BC62E1 /* AttributedLabel_ExampleAppDelegate.m in Sources */,
+				0D1041AE18B8966700BC62E1 /* SCCredentialsView.m in Sources */,
+				0D1041A218B8966700BC62E1 /* NSString+SoundCloudUI.m in Sources */,
+				0D1041BE18B8966700BC62E1 /* SCTableCellBackgroundView.m in Sources */,
+				0D1041AB18B8966700BC62E1 /* SCBundle.m in Sources */,
+				0D1041B918B8966700BC62E1 /* SCShareToSoundCloudTitleView.m in Sources */,
+				0D1041A518B8966700BC62E1 /* UIDevice+SoundCloudUI.m in Sources */,
+				0D1041D118B8966700BC62E1 /* NXOAuth2AccountStore.m in Sources */,
+				0D1041B218B8966700BC62E1 /* SCHorizontalLineView.m in Sources */,
+				0D1041CF18B8966700BC62E1 /* NXOAuth2AccessToken.m in Sources */,
+				0D1041A718B8966700BC62E1 /* UIView+SoundCloudUI.m in Sources */,
+				0D1041BC18B8966700BC62E1 /* SCSwitch.m in Sources */,
+				0D1041BD18B8966700BC62E1 /* SCSwitchLabel.m in Sources */,
+				0D1041A818B8966700BC62E1 /* UIViewController+SoundCloudUI.m in Sources */,
+				0D10419618B8966700BC62E1 /* SCAccount.m in Sources */,
+				0D1041B718B8966700BC62E1 /* SCRecordingSaveViewControllerHeaderView.m in Sources */,
+				0D1041BF18B8966700BC62E1 /* SCTextField.m in Sources */,
+				0D1041B518B8966700BC62E1 /* SCNameAndEmailCell.m in Sources */,
+				0D1041E218B8966700BC62E1 /* OHAttributedLabel.m in Sources */,
+				0D1041AC18B8966700BC62E1 /* SCConnectToSoundCloudTitleView.m in Sources */,
+				0D1041D418B8966700BC62E1 /* NXOAuth2Constants.m in Sources */,
+				0D1041C418B8966700BC62E1 /* JSONKit.m in Sources */,
+				0D1041D618B8966700BC62E1 /* NXOAuth2PostBodyPart.m in Sources */,
+				0D1041D218B8966700BC62E1 /* NXOAuth2Client.m in Sources */,
+				0D1041E118B8966700BC62E1 /* NSAttributedString+Attributes.m in Sources */,
 				0D1040AB18B88DDD00BC62E1 /* SWViewController.m in Sources */,
+				0D1041C118B8966700BC62E1 /* SCUnderlinedButton.m in Sources */,
 				0D1040A518B88DDD00BC62E1 /* SWAppDelegate.m in Sources */,
+				0D1041A618B8966700BC62E1 /* UIImage+SoundCloudUI.m in Sources */,
+				0D1041D718B8966700BC62E1 /* NXOAuth2PostBodyStream.m in Sources */,
+				0D1041BA18B8966700BC62E1 /* SCShareViewController.m in Sources */,
+				0D1041AA18B8966700BC62E1 /* SCAlertView.m in Sources */,
+				0D10419718B8966700BC62E1 /* SCConstants.m in Sources */,
+				0D1041DE18B8966700BC62E1 /* main.m in Sources */,
+				0D1041A318B8966700BC62E1 /* QuartzCore+SoundCloudUI.m in Sources */,
+				0D1041CC18B8966700BC62E1 /* NSData+NXOAuth2.m in Sources */,
+				0D1041AD18B8966700BC62E1 /* SCCoverImageButton.m in Sources */,
+				0D1041A418B8966700BC62E1 /* UIColor+SoundCloudUI.m in Sources */,
+				0D1041B318B8966700BC62E1 /* SCLoginView.m in Sources */,
 				0D1040A118B88DDD00BC62E1 /* main.m in Sources */,
+				0D10419918B8966700BC62E1 /* SCSoundCloud+Private.m in Sources */,
+				0D1041D018B8966700BC62E1 /* NXOAuth2Account.m in Sources */,
+				0D1041B618B8966700BC62E1 /* SCRecordingSaveViewController.m in Sources */,
+				0D1041B118B8966700BC62E1 /* SCGradientButton.m in Sources */,
+				0D1041B818B8966700BC62E1 /* SCRecordingUploadProgressView.m in Sources */,
+				0D1041B018B8966700BC62E1 /* SCFoursquarePlacePickerController.m in Sources */,
+				0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */,
+				0D1041A118B8966700BC62E1 /* NSData+SoundCloudUI.m in Sources */,
+				0D1041D318B8966700BC62E1 /* NXOAuth2Connection.m in Sources */,
+				0D10419A18B8966700BC62E1 /* SCSoundCloud.m in Sources */,
+				0D1041C018B8966700BC62E1 /* SCUIErrors.m in Sources */,
+				0D1041CD18B8966700BC62E1 /* NSString+NXOAuth2.m in Sources */,
+				0D10419818B8966700BC62E1 /* SCRequest.m in Sources */,
+				0D1041B418B8966700BC62E1 /* SCLoginViewController.m in Sources */,
+				0D1041A918B8966700BC62E1 /* SCAddConnectionViewController.m in Sources */,
+				0D1041D818B8966700BC62E1 /* NXOAuth2Request.m in Sources */,
+				0D10419518B8966700BC62E1 /* SCAccount+Private.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +1240,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SingalongWorld/SingalongWorld-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../**",
+				);
 				INFOPLIST_FILE = "SingalongWorld/SingalongWorld-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,9 +1260,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SingalongWorld/SingalongWorld-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../**",
+				);
 				INFOPLIST_FILE = "SingalongWorld/SingalongWorld-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
