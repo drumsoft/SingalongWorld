@@ -11,7 +11,7 @@
 @interface SWViewController : UIViewController <UITextFieldDelegate> {
     __weak IBOutlet UITextField *titleTextField;
     __weak IBOutlet UITextField *filterTextField;
-    __weak IBOutlet UILabel *statusLabel;
+    __weak IBOutlet UITextView *statusLabel;
 }
 
 - (IBAction)startSearch:(id)sender;

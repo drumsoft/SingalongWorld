@@ -35,7 +35,6 @@
     
     [self textFieldDidEndEditing:titleTextField];
     [self textFieldDidEndEditing:filterTextField];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +65,10 @@
 
 // 方向転換によって状態を更新する
 - (void)updateDirection:(double)direction fromLatitude:(double)latDegree andLongitude:(double)lngDegree {
+    double maxVolume = 0, selectedPan = 0;
+    SWTrack *selected = nil;
+    
+    // 方向の再計算
     for ( SWTrack *track in tracksArray) {
         if ( [track isReady] ) {
             double dx = track.latitude - latDegree;
@@ -74,9 +77,27 @@
             track.direction = atan2(dx, dy) - direction * (2*M_PI) / 360;
             track.distance = sqrt(dx*dx + dy*dy);
             
-            [track setPan: sin(track.direction)
-                andVolume: 0.25 * cos(track.direction) + 0.30 ];
+            double pan = sin(track.direction);
+            double volume = 0.30 * cos(track.direction) + 0.30;
+            
+            [track setPan: pan andVolume: volume ];
+            
+            if ( volume > maxVolume ) {
+                selected = track;
+                selectedPan = pan;
+                maxVolume = volume;
+            }
         }
+    }
+    
+    // フォーカスの処理
+    if ( selected && fabs(selectedPan) < 0.15 ) {
+        // ラベルの書き換え
+        statusLabel.text = [NSString stringWithFormat:@"%@ by %@ (%@, %@)",
+                            selected.title, selected.userName, selected.city, selected.country];
+        statusLabel.textColor = [UIColor whiteColor];
+    } else {
+        statusLabel.text = @"";
     }
 }
 

@@ -39,9 +39,9 @@
     soundCloud = sc;
     geoManager = gm;
     
-    track_id = [[trackInfo valueForKey:@"id"] longLongValue];
-    parmanentUrl = [trackInfo valueForKey:@"permalink_url"];
-    title        = [trackInfo valueForKey:@"title"];
+    self.track_id = [[trackInfo valueForKey:@"id"] longLongValue];
+    self.parmanentUrl = [trackInfo valueForKey:@"permalink_url"];
+    self.title        = [trackInfo valueForKey:@"title"];
     
     [soundCloud startFetchUserDetail:[[trackInfo valueForKey:@"user_id"] longLongValue] forTrack:self];
     [soundCloud startDownStream:[trackInfo valueForKey:@"stream_url"] forTrack:self];
@@ -50,10 +50,13 @@
 }
 
 - (void)setUserDetailInfo:(NSDictionary *)userDetailInfo {
-    userName = [userDetailInfo valueForKey:@"username"];
-    imageUrl = [userDetailInfo valueForKey:@"avatar_url"];
-    country = [userDetailInfo valueForKey:@"country"];
-    city = [userDetailInfo valueForKey:@"city"];
+    self.userName = [userDetailInfo valueForKey:@"username"];
+    self.imageUrl = [userDetailInfo valueForKey:@"avatar_url"];
+    self.country = [userDetailInfo valueForKey:@"country"];
+    self.city = [userDetailInfo valueForKey:@"city"];
+    
+    if ( ! country ) country = @"";
+    if ( ! city ) city = @"";
     
     isUserInfoReady = true;
     
@@ -61,8 +64,8 @@
 }
 
 - (void)setLatitude:(double)latDegree longitude:(double)lngDegree {
-    latitude  = latDegree;
-    longitude = lngDegree;
+    self.latitude  = latDegree;
+    self.longitude = lngDegree;
     
     isGeoReady = true;
     [self checkPrepareing];
