@@ -9,9 +9,11 @@
 #import "SWViewController.h"
 
 #import "SWSoundCloud.h"
+#import "SWGeoManager.h"
 
 
 @interface SWViewController () {
+    SWGeoManager *geoManager;
 }
 - (void)setUptextField:(UITextField *)textField;
 @end
@@ -22,6 +24,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    geoManager = [[SWGeoManager alloc] init];
+    [geoManager startGPS];
     
     [self textFieldDidEndEditing:titleTextField];
     [self textFieldDidEndEditing:filterTextField];

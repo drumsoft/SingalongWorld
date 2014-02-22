@@ -12,9 +12,9 @@
 		0D10409918B88DDD00BC62E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10409818B88DDD00BC62E1 /* UIKit.framework */; };
 		0D10409F18B88DDD00BC62E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D10409D18B88DDD00BC62E1 /* InfoPlist.strings */; };
 		0D1040A118B88DDD00BC62E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040A018B88DDD00BC62E1 /* main.m */; };
-		0D1040A518B88DDD00BC62E1 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040A418B88DDD00BC62E1 /* SWAppDelegate.m */; };
+		0D1040A518B88DDD00BC62E1 /* SWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040A418B88DDD00BC62E1 /* SWAppDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D1040A818B88DDD00BC62E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040A618B88DDD00BC62E1 /* Main.storyboard */; };
-		0D1040AB18B88DDD00BC62E1 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040AA18B88DDD00BC62E1 /* SWViewController.m */; };
+		0D1040AB18B88DDD00BC62E1 /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1040AA18B88DDD00BC62E1 /* SWViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D1040AD18B88DDD00BC62E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D1040AC18B88DDD00BC62E1 /* Images.xcassets */; };
 		0D1040B418B88DDD00BC62E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1040B318B88DDD00BC62E1 /* XCTest.framework */; };
 		0D1040B518B88DDD00BC62E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10409418B88DDD00BC62E1 /* Foundation.framework */; };
@@ -81,19 +81,19 @@
 		0D1041C918B8966700BC62E1 /* NXOAuth2Client.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414A18B8966600BC62E1 /* NXOAuth2Client.podspec */; };
 		0D1041CA18B8966700BC62E1 /* OAuth2Client.framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414B18B8966700BC62E1 /* OAuth2Client.framework-Info.plist */; };
 		0D1041CB18B8966700BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10414F18B8966700BC62E1 /* README.md */; };
-		0D1041CC18B8966700BC62E1 /* NSData+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415218B8966700BC62E1 /* NSData+NXOAuth2.m */; };
-		0D1041CD18B8966700BC62E1 /* NSString+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415418B8966700BC62E1 /* NSString+NXOAuth2.m */; };
-		0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415618B8966700BC62E1 /* NSURL+NXOAuth2.m */; };
-		0D1041CF18B8966700BC62E1 /* NXOAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415A18B8966700BC62E1 /* NXOAuth2AccessToken.m */; };
-		0D1041D018B8966700BC62E1 /* NXOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415C18B8966700BC62E1 /* NXOAuth2Account.m */; };
-		0D1041D118B8966700BC62E1 /* NXOAuth2AccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415E18B8966700BC62E1 /* NXOAuth2AccountStore.m */; };
-		0D1041D218B8966700BC62E1 /* NXOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416018B8966700BC62E1 /* NXOAuth2Client.m */; };
-		0D1041D318B8966700BC62E1 /* NXOAuth2Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416318B8966700BC62E1 /* NXOAuth2Connection.m */; };
-		0D1041D418B8966700BC62E1 /* NXOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416618B8966700BC62E1 /* NXOAuth2Constants.m */; };
-		0D1041D518B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416818B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m */; };
-		0D1041D618B8966700BC62E1 /* NXOAuth2PostBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416A18B8966700BC62E1 /* NXOAuth2PostBodyPart.m */; };
-		0D1041D718B8966700BC62E1 /* NXOAuth2PostBodyStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416C18B8966700BC62E1 /* NXOAuth2PostBodyStream.m */; };
-		0D1041D818B8966700BC62E1 /* NXOAuth2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416E18B8966700BC62E1 /* NXOAuth2Request.m */; };
+		0D1041CC18B8966700BC62E1 /* NSData+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415218B8966700BC62E1 /* NSData+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041CD18B8966700BC62E1 /* NSString+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415418B8966700BC62E1 /* NSString+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415618B8966700BC62E1 /* NSURL+NXOAuth2.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041CF18B8966700BC62E1 /* NXOAuth2AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415A18B8966700BC62E1 /* NXOAuth2AccessToken.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D018B8966700BC62E1 /* NXOAuth2Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415C18B8966700BC62E1 /* NXOAuth2Account.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D118B8966700BC62E1 /* NXOAuth2AccountStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10415E18B8966700BC62E1 /* NXOAuth2AccountStore.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D218B8966700BC62E1 /* NXOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416018B8966700BC62E1 /* NXOAuth2Client.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D318B8966700BC62E1 /* NXOAuth2Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416318B8966700BC62E1 /* NXOAuth2Connection.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D418B8966700BC62E1 /* NXOAuth2Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416618B8966700BC62E1 /* NXOAuth2Constants.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D518B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416818B8966700BC62E1 /* NXOAuth2FileStreamWrapper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D618B8966700BC62E1 /* NXOAuth2PostBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416A18B8966700BC62E1 /* NXOAuth2PostBodyPart.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D718B8966700BC62E1 /* NXOAuth2PostBodyStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416C18B8966700BC62E1 /* NXOAuth2PostBodyStream.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D1041D818B8966700BC62E1 /* NXOAuth2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10416E18B8966700BC62E1 /* NXOAuth2Request.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D1041D918B8966700BC62E1 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417218B8966700BC62E1 /* .gitattributes */; };
 		0D1041DA18B8966700BC62E1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0D10417318B8966700BC62E1 /* .gitignore */; };
 		0D1041E018B8966700BC62E1 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0D10418018B8966700BC62E1 /* LICENSE */; };
@@ -104,7 +104,9 @@
 		0D10420818B89C9100BC62E1 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10420418B89C9100BC62E1 /* CHANGELOG.md */; };
 		0D10420918B89C9100BC62E1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420618B89C9100BC62E1 /* JSONKit.m */; };
 		0D10420A18B89C9100BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10420718B89C9100BC62E1 /* README.md */; };
-		0D10420D18B8A8F000BC62E1 /* SWSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */; };
+		0D10420D18B8A8F000BC62E1 /* SWSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */; };
+		0D10421218B8E10000BC62E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10421118B8E10000BC62E1 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +346,9 @@
 		0D10420718B89C9100BC62E1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		0D10420B18B8A8F000BC62E1 /* SWSoundCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSoundCloud.h; sourceTree = "<group>"; };
 		0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSoundCloud.m; sourceTree = "<group>"; };
+		0D10420E18B8DE7A00BC62E1 /* SWGeoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWGeoManager.h; sourceTree = "<group>"; };
+		0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWGeoManager.m; sourceTree = "<group>"; };
+		0D10421118B8E10000BC62E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +356,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D10421218B8E10000BC62E1 /* CoreLocation.framework in Frameworks */,
 				0D10409718B88DDD00BC62E1 /* CoreGraphics.framework in Frameworks */,
 				0D10409918B88DDD00BC62E1 /* UIKit.framework in Frameworks */,
 				0D10409518B88DDD00BC62E1 /* Foundation.framework in Frameworks */,
@@ -397,6 +403,7 @@
 		0D10409318B88DDD00BC62E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D10421118B8E10000BC62E1 /* CoreLocation.framework */,
 				0D10409418B88DDD00BC62E1 /* Foundation.framework */,
 				0D10409618B88DDD00BC62E1 /* CoreGraphics.framework */,
 				0D10409818B88DDD00BC62E1 /* UIKit.framework */,
@@ -411,6 +418,8 @@
 				0D1040A318B88DDD00BC62E1 /* SWAppDelegate.h */,
 				0D1040A418B88DDD00BC62E1 /* SWAppDelegate.m */,
 				0D1040A618B88DDD00BC62E1 /* Main.storyboard */,
+				0D10420E18B8DE7A00BC62E1 /* SWGeoManager.h */,
+				0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */,
 				0D1040A918B88DDD00BC62E1 /* SWViewController.h */,
 				0D1040AA18B88DDD00BC62E1 /* SWViewController.m */,
 				0D10420B18B8A8F000BC62E1 /* SWSoundCloud.h */,
@@ -941,6 +950,7 @@
 				0D1041BB18B8966700BC62E1 /* SCSharingMailPickerController.m in Sources */,
 				0D1041AE18B8966700BC62E1 /* SCCredentialsView.m in Sources */,
 				0D1041A218B8966700BC62E1 /* NSString+SoundCloudUI.m in Sources */,
+				0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */,
 				0D1041BE18B8966700BC62E1 /* SCTableCellBackgroundView.m in Sources */,
 				0D1041AB18B8966700BC62E1 /* SCBundle.m in Sources */,
 				0D1041B918B8966700BC62E1 /* SCShareToSoundCloudTitleView.m in Sources */,
@@ -960,6 +970,7 @@
 				0D1041E218B8966700BC62E1 /* OHAttributedLabel.m in Sources */,
 				0D1041AC18B8966700BC62E1 /* SCConnectToSoundCloudTitleView.m in Sources */,
 				0D1041D418B8966700BC62E1 /* NXOAuth2Constants.m in Sources */,
+				0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */,
 				0D1041D618B8966700BC62E1 /* NXOAuth2PostBodyPart.m in Sources */,
 				0D1041D218B8966700BC62E1 /* NXOAuth2Client.m in Sources */,
 				0D1041E118B8966700BC62E1 /* NSAttributedString+Attributes.m in Sources */,
@@ -983,7 +994,6 @@
 				0D1041B118B8966700BC62E1 /* SCGradientButton.m in Sources */,
 				0D1041B818B8966700BC62E1 /* SCRecordingUploadProgressView.m in Sources */,
 				0D1041B018B8966700BC62E1 /* SCFoursquarePlacePickerController.m in Sources */,
-				0D1041CE18B8966700BC62E1 /* NSURL+NXOAuth2.m in Sources */,
 				0D1041A118B8966700BC62E1 /* NSData+SoundCloudUI.m in Sources */,
 				0D1041D318B8966700BC62E1 /* NXOAuth2Connection.m in Sources */,
 				0D10419A18B8966700BC62E1 /* SCSoundCloud.m in Sources */,

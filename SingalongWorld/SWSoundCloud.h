@@ -15,7 +15,7 @@
 + (SWSoundCloud *)instance;
 
 - (void)start;
-- (Boolean)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter;
+- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter;
 - (void)getTrack:(NSNumber *)track_id;
 - (void)getUser:(NSNumber *)user_id;
 
