@@ -67,6 +67,11 @@
     [self.view addSubview:track.imageview];
 }
 
+#define SW_SPECIAL_ZOOM_PAN 0.15
+#define SW_SPECIAL_ZOOM_Z  20.0
+#define SW_3D_XY_ZOOM     400.0
+#define SW_3D_MAX_WIDTH  4000.0
+
 // 方向転換によって状態を更新する
 - (void)updateDirection:(double)direction fromLatitude:(double)latDegree andLongitude:(double)lngDegree {
     double maxVolume = 0, selectedPan = 0;
@@ -77,33 +82,17 @@
         if ( [track isReady] ) {
             double dx = track.latitude - latDegree;
             double dy = (track.longitude - lngDegree) * cos( (track.latitude+latDegree)*2*M_PI/(2*360) );
-            
             track.direction = atan2(dx, dy) - direction * (2*M_PI) / 360;
-            track.distance = sqrt(dx*dx + dy*dy);
             
             // パンとボリューム
             double pan = sin(track.direction);
             double volume = 0.30 * cos(track.direction) + 0.30;
-            
             [track setPan: pan andVolume: volume ];
             
             // 写真の配置
-            float z  = track.distance * cos(track.direction) / 20;
-            if ( z > 0.1 ) {
-                float x1 = track.distance * sin(track.direction);
-                float y1 = 0;
-                float x2 = 160 + 20 * x1 / z;
-                float y2 = 240 + 20 * y1 / z;
-                NSLog(@"%f, {%f, %f, %f}", track.distance, x2, y2, z);
-                
-                float w = 200 / z;
-                track.imageview.frame = CGRectMake( x2 - w/2, y2 - w/2, w, w );
-                track.imageview.hidden = false;
-            } else {
-                track.imageview.hidden = true;
-            }
+            track.z  = track.distance * cos(track.direction);
             
-            // 最も真ん中のデータ
+            // 最も真ん中のデータ検索
             if ( volume > maxVolume ) {
                 selected = track;
                 selectedPan = pan;
@@ -113,13 +102,32 @@
     }
     
     // フォーカスの処理
-    if ( selected && fabs(selectedPan) < 0.15 ) {
+    if ( selected && fabs(selectedPan) < SW_SPECIAL_ZOOM_PAN ) {
         // ラベルの書き換え
         statusLabel.text = [NSString stringWithFormat:@"%@ by %@ (%@, %@)",
                             selected.title, selected.userName, selected.city, selected.country];
         statusLabel.textColor = [UIColor whiteColor];
+        // Z を 最大 20 まで近づける
+        double r = (SW_SPECIAL_ZOOM_PAN - fabs(selectedPan)) / SW_SPECIAL_ZOOM_PAN;
+        selected.z = r * SW_SPECIAL_ZOOM_Z + (1-r) * selected.z;
     } else {
         statusLabel.text = @"";
+    }
+    
+    // z で並び替えして描画を行う
+    NSArray *zSorted = [tracksArray sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"z" ascending:NO]]];
+    for ( SWTrack *track in zSorted ) {
+        NSLog(@"Z:%f", track.z);
+        if ( track.z >= SW_SPECIAL_ZOOM_PAN ) {
+            float x1 = track.distance * sin(track.direction);
+            float x2 = 160 + SW_3D_XY_ZOOM * x1 / track.z;
+            float y2 = 240 + SW_3D_XY_ZOOM * 7 / track.z;
+            float w = SW_3D_MAX_WIDTH / track.z;
+            track.imageview.frame = CGRectMake( x2 - w/2, y2 - w/2, w, w );
+            track.imageview.hidden = false;
+        } else {
+            track.imageview.hidden = true;
+        }
     }
 }
 

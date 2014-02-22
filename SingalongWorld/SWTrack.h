@@ -15,19 +15,19 @@
     SWSoundCloud *soundCloud;
     SWGeoManager *geoManager;
     long long track_id;
-    double latitude, longitude, direction, distance, zoom;
+    double latitude, longitude, direction, distance, y, z;
     NSString *parmanentUrl, *title, *userName, *country, *city, *imageUrl;
     UIImageView *imageview;
 }
 @property (nonatomic) long long track_id;
-@property (nonatomic) double latitude, longitude, direction, distance, zoom;
+@property (nonatomic) double latitude, longitude, direction, distance, y, z;
 @property (nonatomic, copy) NSString *parmanentUrl, *title, *userName, *country, *city, *imageUrl;
 @property (nonatomic, retain) UIImageView *imageview;
 
 - (id)initWithTrackInfo:(NSDictionary *)trackInfo withSoundCloud:(SWSoundCloud *)sc withGeoManager:(SWGeoManager *)gm;
 
 - (void)setUserDetailInfo:(NSDictionary *)userDetailInfo;
-- (void)setLatitude:(double)latDegree longitude:(double)lngDegree;
+- (void)setLatitude:(double)latDegree longitude:(double)lngDegree distance:(double)dstLength;
 - (void)setSoundData:(NSData *)soundData;
 
 - (void)setPan:(double)p andVolume:(double)v;

@@ -13,6 +13,8 @@
 #import "SWSoundCloud.h"
 #import "SWGeoManager.h"
 
+#define SW_3D_TRACK_Y_MAX 5.0
+
 
 @interface SWTrack () {
     bool isSoundReady, isUserInfoReady, isGeoReady, isAllPrepared;
@@ -25,7 +27,7 @@
 @implementation SWTrack
 
 @synthesize track_id;
-@synthesize latitude, longitude, direction, distance, zoom;
+@synthesize latitude, longitude, direction, distance, y, z;
 @synthesize parmanentUrl, title, userName, country, city, imageUrl;
 @synthesize imageview;
 
@@ -66,18 +68,15 @@
     
     [geoManager searchGeometryByCountry:country andCity:city forTrack:self];
 
-    NSURL *url = [NSURL URLWithString:self.imageUrl];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    UIImage *image = [[UIImage alloc] initWithData:data];
-//    UIImage *image = [UIImage imageNamed:@"test.jpg"];
-    NSLog(@"image: %@", image);
-	self.imageview.image = image;
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:self.imageUrl]];
+	self.imageview.image = [[UIImage alloc] initWithData:data];
     [self.imageview.superview addSubview:self.imageview];
 }
 
-- (void)setLatitude:(double)latDegree longitude:(double)lngDegree {
+- (void)setLatitude:(double)latDegree longitude:(double)lngDegree distance:(double)dstLength {
     self.latitude  = latDegree;
     self.longitude = lngDegree;
+    self.distance  = dstLength;
     
     isGeoReady = true;
     [self checkPrepareing];
