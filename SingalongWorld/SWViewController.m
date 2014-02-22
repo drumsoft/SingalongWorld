@@ -33,8 +33,9 @@
     geoManager = [[SWGeoManager alloc] init];
     [geoManager startGPSWithController:self];
     
-    [self textFieldDidEndEditing:titleTextField];
-    [self textFieldDidEndEditing:filterTextField];
+    [self setUptextField:titleTextField];
+    [self setUptextField:filterTextField];
+    [self startSearch:titleTextField];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,8 +45,9 @@
 }
 
 // --------------------------------------------------------- textFieldDelegate
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self startSearch:textField];
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 // --------------------------------------------------------- public
@@ -111,6 +113,9 @@
 }
 
 - (void)resetTracks {
+    for (SWTrack *track in tracksArray) {
+        [track stop];
+    }
     tracksArray = [[NSMutableArray alloc] init];
 }
 

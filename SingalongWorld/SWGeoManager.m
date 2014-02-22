@@ -48,7 +48,7 @@
 }
 
 - (void)searchGeometryByCountry:(NSString *)country andCity:(NSString *)city forTrack:(SWTrack *)track {
-    CLGeocoder *geocoder = [[[CLGeocoder alloc] init] autorelease];
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
     [geocoder geocodeAddressString:[NSString stringWithFormat:@"%@, %@", city, country]
                  completionHandler:^(NSArray* placemarks, NSError* error) {
                      if (!error && [placemarks count] > 0) {

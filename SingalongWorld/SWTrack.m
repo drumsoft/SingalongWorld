@@ -100,4 +100,11 @@
     return isAllPrepared;
 }
 
+- (void)stop {
+    if ([player isPlaying]) {
+        [player stop];
+    }
+}
+
+
 @end

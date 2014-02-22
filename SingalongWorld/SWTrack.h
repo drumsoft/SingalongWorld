@@ -31,5 +31,6 @@
 - (void)setPan:(double)p andVolume:(double)v;
 
 - (BOOL)isReady;
+- (void)stop;
 
 @end

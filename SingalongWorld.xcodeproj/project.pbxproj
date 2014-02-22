@@ -105,9 +105,9 @@
 		0D10420918B89C9100BC62E1 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420618B89C9100BC62E1 /* JSONKit.m */; };
 		0D10420A18B89C9100BC62E1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0D10420718B89C9100BC62E1 /* README.md */; };
 		0D10420D18B8A8F000BC62E1 /* SWSoundCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420C18B8A8F000BC62E1 /* SWSoundCloud.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */; };
+		0D10421018B8DE7A00BC62E1 /* SWGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10420F18B8DE7A00BC62E1 /* SWGeoManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		0D10421218B8E10000BC62E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D10421118B8E10000BC62E1 /* CoreLocation.framework */; };
-		0D10421518B9139D00BC62E1 /* SWTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10421418B9139D00BC62E1 /* SWTrack.m */; };
+		0D10421518B9139D00BC62E1 /* SWTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D10421418B9139D00BC62E1 /* SWTrack.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
