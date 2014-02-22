@@ -60,14 +60,11 @@
     self.imageUrl = [userDetailInfo valueForKey:@"avatar_url"];
     self.country = [userDetailInfo valueForKey:@"country"];
     self.city = [userDetailInfo valueForKey:@"city"];
-    
-    if ( ! country ) country = @"";
-    if ( ! city ) city = @"";
-    
+
     isUserInfoReady = true;
     
     [geoManager searchGeometryByCountry:country andCity:city forTrack:self];
-
+    
     NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:self.imageUrl]];
 	self.imageview.image = [[UIImage alloc] initWithData:data];
     [self.imageview.superview addSubview:self.imageview];
@@ -115,6 +112,7 @@
     if ([player isPlaying]) {
         [player stop];
     }
+    [self.imageview removeFromSuperview];
 }
 
 

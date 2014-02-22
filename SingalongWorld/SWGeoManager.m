@@ -47,24 +47,55 @@
     }
 }
 
+- (BOOL)isNull:(NSString *)text {
+    return !text || text == (id)[NSNull null] || [@"" isEqualToString:text];
+}
+
+- (void)setLatitude:(double)latitude longitude:(double)longitude for:(SWTrack *)track {
+    double dx = latitude - myLatitude, dy = longitude - myLongitude;
+    double distance = sqrt(dx*dx + dy*dy);
+    [track setLatitude:latitude longitude:longitude distance:distance];
+}
+
 - (void)searchGeometryByCountry:(NSString *)country andCity:(NSString *)city forTrack:(SWTrack *)track {
+    long long intKey = track.track_id;
+    NSString *query;
+    if ( [self isNull:country] ) {
+        track.country = @"";
+        if ( [self isNull:city] ) {
+            track.city = @"";
+            [self setLatitude: -90 +  (double)180 * ((double)(intKey % 89) / (double)88)
+                    longitude: -180 + (double)360 * ((double)(intKey % 181) / (double)181)
+                          for:track];
+            return;
+        } else {
+            query = city;
+        }
+    } else {
+        if ( [self isNull:city] ) {
+            track.city = @"";
+            query = country;
+        } else {
+            query = [NSString stringWithFormat:@"%@, %@", city, country];
+        }
+    }
+    
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
-    [geocoder geocodeAddressString:[NSString stringWithFormat:@"%@, %@", city, country]
+    [geocoder geocodeAddressString: query
                  completionHandler:^(NSArray* placemarks, NSError* error) {
-                     double latitude, longitude;
                      if (!error && [placemarks count] > 0) {
                          CLPlacemark* placemark = placemarks[0];
-                         latitude  = placemark.location.coordinate.latitude;
-                         longitude = placemark.location.coordinate.longitude;
+                         [self setLatitude: placemark.location.coordinate.latitude
+                                 longitude: placemark.location.coordinate.longitude
+                                       for:track];
                      } else {
                          NSLog(@"Geocoding failed for %@, %@", city, country);
-                         long long intKey = track.track_id;
-                         latitude  =  -90 +  (double)90 * ((double)(intKey % 89) / (double)88);
-                         longitude = -180 + (double)180 * ((double)(intKey % 181) / (double)181);
-                     }
-                     double dx = latitude - myLatitude, dy = longitude - myLongitude;
-                     double distance = sqrt(dx*dx + dy*dy);
-                     [track setLatitude:latitude longitude:longitude distance:distance];
+                         [self setLatitude: -90 +  (double)180 * ((double)(intKey % 89) / (double)88)
+                                 longitude: -180 + (double)360 * ((double)(intKey % 181) / (double)181)
+                                       for:track];
+                         track.country = @"";
+                         track.city = @"";
+                    }
                  }];
 }
 

@@ -72,6 +72,16 @@
 #define SW_3D_XY_ZOOM     400.0
 #define SW_3D_MAX_WIDTH  4000.0
 
+double SW_normaeizeDegree(double degree) {
+    while ( degree < -180 ) {
+        degree += 360;
+    }
+    while ( 180 < degree ) {
+        degree -= 360;
+    }
+    return degree;
+}
+
 // 方向転換によって状態を更新する
 - (void)updateDirection:(double)direction fromLatitude:(double)latDegree andLongitude:(double)lngDegree {
     double maxVolume = 0, selectedPan = 0;
@@ -80,8 +90,8 @@
     // 方向の再計算
     for ( SWTrack *track in tracksArray) {
         if ( [track isReady] ) {
-            double dx = track.latitude - latDegree;
-            double dy = (track.longitude - lngDegree) * cos( (track.latitude+latDegree)*2*M_PI/(2*360) );
+            double dy = track.latitude - latDegree;
+            double dx = SW_normaeizeDegree(track.longitude - lngDegree) * cos( (track.latitude+latDegree)*2*M_PI/(2*360) );
             track.direction = atan2(dx, dy) - direction * (2*M_PI) / 360;
             
             // パンとボリューム
@@ -115,15 +125,15 @@
     }
     
     // z で並び替えして描画を行う
-    NSArray *zSorted = [tracksArray sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"z" ascending:NO]]];
+    NSArray *zSorted = [tracksArray sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"z" ascending:YES]]];
     for ( SWTrack *track in zSorted ) {
-        NSLog(@"Z:%f", track.z);
         if ( track.z >= SW_SPECIAL_ZOOM_PAN ) {
             float x1 = track.distance * sin(track.direction);
             float x2 = 160 + SW_3D_XY_ZOOM * x1 / track.z;
             float y2 = 240 + SW_3D_XY_ZOOM * 7 / track.z;
             float w = SW_3D_MAX_WIDTH / track.z;
             track.imageview.frame = CGRectMake( x2 - w/2, y2 - w/2, w, w );
+            [self.view sendSubviewToBack:track.imageview];
             track.imageview.hidden = false;
         } else {
             track.imageview.hidden = true;
