@@ -25,6 +25,8 @@ SWSoundCloud* SWSoundCloud_me;
 }
 - (NSString *)normalizeText:(NSString *)text;
 - (void)startDownStream:(NSString *)url forId:(id) track_id;
+- (void)startFetchUserDetail:(id)user_id forId:(id)track_id;
+
 - (void)resetDicts;
 @end
 
@@ -47,7 +49,6 @@ SWSoundCloud* SWSoundCloud_me;
 }
 
 - (void)startDownStream:(NSString *)url forId:(id)track_id {
-    NSLog(@"starting... %@", url);
     [SCRequest performMethod:SCRequestMethodGET
                   onResource:[NSURL URLWithString:url]
              usingParameters:@{ @"client_id":SW_SOUNDCLOUD_CLIENT_ID }
@@ -65,7 +66,37 @@ SWSoundCloud* SWSoundCloud_me;
                      player.volume = 0.1 + 0.4 * ((float)rand() / (float)RAND_MAX);
                      [player play];
                      [playerDict setValue:player forKey:track_id];
-                     NSLog(@"started! %@", url);
+                 }
+             }];
+}
+
+- (void)startFetchUserDetail:(id)user_id forId:(id)track_id {
+    [SCRequest performMethod:SCRequestMethodGET
+                  onResource:[NSURL URLWithString:
+                              [NSString stringWithFormat:@"https://api.soundcloud.com/users/%d.json", [user_id intValue]]
+                              ]
+             usingParameters:@{ @"client_id":SW_SOUNDCLOUD_CLIENT_ID }
+                 withAccount:nil
+      sendingProgressHandler:nil
+             responseHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+                 // Handle the response
+                 if (error) {
+                     NSLog(@"User detail error: - %@ - %@", [error localizedDescription], response);
+                 } else {
+                     // JSONパース->データセット
+                     NSError *jsonError = nil;
+                     NSJSONSerialization *jsonResponse = [NSJSONSerialization
+                                                          JSONObjectWithData:data
+                                                          options:0
+                                                          error:&jsonError];
+                     if (!jsonError) {
+                         //NSLog(@"User Detail: %@", jsonResponse);
+                         NSLog(@"avatar_url : %@", [jsonResponse valueForKey:@"avatar_url"]);
+                         NSLog(@"city : %@", [jsonResponse valueForKey:@"city"]);
+                         NSLog(@"country : %@", [jsonResponse valueForKey:@"country"]);
+                     } else {
+                         NSLog(@"json parse error: - %@ - %@", jsonResponse, jsonError);
+                     }
                  }
              }];
 }
@@ -76,8 +107,6 @@ SWSoundCloud* SWSoundCloud_me;
     NSString *query = [NSString stringWithFormat:@"%@ %@", qTitle, qFilter];
     
     if ( [prevQuery isEqualToString:query] ) return NO;
-    
-    NSLog(@"search %@", query);
     
     [SCRequest performMethod:SCRequestMethodGET
                   onResource:[NSURL URLWithString:@"https://api.soundcloud.com/tracks.json"]
@@ -96,7 +125,7 @@ SWSoundCloud* SWSoundCloud_me;
                                                           options:0
                                                           error:&jsonError];
                      if (!jsonError && [jsonResponse isKindOfClass:[NSArray class]]) {
-                         NSLog(@"result: %@", jsonResponse);
+                         // NSLog(@"result: %@", jsonResponse);
                          // 検索した名前でフィルタ
                          NSArray *result = [(NSArray *)jsonResponse filteredArrayUsingPredicate:
                                             [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings){
@@ -110,10 +139,12 @@ SWSoundCloud* SWSoundCloud_me;
                          [self resetDicts];
                          // メタデータを保存
                          for(NSDictionary *track in result){
-                             NSLog(@"%@", [track valueForKey:@"title"]);
                              [metadataDict setValue:track forKey:[track valueForKey:@"id"]];
                          }
-                         NSLog(@"ooooo");
+                         // ユーザデータDL開始
+                         for(NSDictionary *track in result){
+                             [self startFetchUserDetail:[track valueForKey:@"user_id"] forId:[track valueForKey:@"id"]];
+                         }
                          // 音声データDL開始
                          for(NSDictionary *track in result){
                              NSLog(@"%@", [track valueForKey:@"title"]);
