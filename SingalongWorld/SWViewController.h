@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SWViewController : UIViewController
+@interface SWViewController : UIViewController <UITextFieldDelegate> {
+    __weak IBOutlet UITextField *titleTextField;
+    __weak IBOutlet UITextField *filterTextField;
+    __weak IBOutlet UILabel *statusLabel;
+}
+
+- (void)startSearch;
 
 @end
