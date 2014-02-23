@@ -139,7 +139,10 @@ SWSoundCloud* SWSoundCloud_me;
                                             [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings){
                              NSString *titleNormalized = [self normalizeText:[evaluatedObject valueForKey:@"title"]];
                              return ([titleNormalized rangeOfString:qTitle ].location != NSNotFound) &&
-                                    ([titleNormalized rangeOfString:qFilter].location != NSNotFound);
+                                    ([titleNormalized rangeOfString:qFilter].location != NSNotFound) &&
+                                    ([evaluatedObject valueForKey:@"stream_url"]) &&
+                                    ([evaluatedObject valueForKey:@"streamable"])
+                             ;
                          }]
                                             ];
                          NSLog(@"result: %d / %d", [result count], [(NSArray *)jsonResponse count] );
