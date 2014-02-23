@@ -1237,6 +1237,7 @@
 				0D1040C518B88DDD00BC62E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D1040C618B88DDD00BC62E1 /* Build configuration list for PBXNativeTarget "SingalongWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -1245,6 +1246,7 @@
 				0D1040C818B88DDD00BC62E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
