@@ -155,13 +155,14 @@ double SW_normaeizeDegree(double degree) {
     // z で並び替えして描画を行う
     NSArray *zSorted = [tracksArray sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"z" ascending:YES]]];
     for ( SWTrack *track in zSorted ) {
-        if ( track.z >= SW_SPECIAL_ZOOM_PAN ) {
+        if ( track.z >= SW_SPECIAL_ZOOM_Z ) {
             float x1 = track.distance * sin(track.direction);
             float x2 = 160 + SW_3D_XY_ZOOM * x1 / track.z;
             float y2 = 240 + SW_3D_XY_ZOOM * 7 / track.z;
             float w = SW_3D_MAX_WIDTH / track.z;
             track.imageview.frame = CGRectMake( x2 - w/2, y2 - w/2, w, w );
             [self.view sendSubviewToBack:track.imageview];
+            track.imageview.alpha = 0.5 + 0.5 * (SW_SPECIAL_ZOOM_Z / track.z);
             track.imageview.hidden = false;
         } else {
             track.imageview.hidden = true;
