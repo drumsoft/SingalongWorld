@@ -155,7 +155,8 @@ double SW_normaeizeDegree(double degree) {
     // z で並び替えして描画を行う
     NSArray *zSorted = [tracksArray sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"z" ascending:YES]]];
     for ( SWTrack *track in zSorted ) {
-        if ( track.z >= SW_SPECIAL_ZOOM_Z ) {
+        if ( track.z > 0 ) {
+            if ( track.z < SW_SPECIAL_ZOOM_Z ) track.z = SW_SPECIAL_ZOOM_Z;
             float x1 = track.distance * sin(track.direction);
             float x2 = 160 + SW_3D_XY_ZOOM * x1 / track.z;
             float y2 = 240 + SW_3D_XY_ZOOM * 7 / track.z;
