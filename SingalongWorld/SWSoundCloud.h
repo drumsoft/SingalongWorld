@@ -34,7 +34,8 @@
 
 - (void)start;
 
-- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller;
+- (BOOL)isChangedSearchTitle:(NSString *)searchTitle andFilter:(NSString *)searchFilter;
+- (void)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller;
 
 - (void)startFetchUserDetail:(long long)user_id forTrack:(SWTrack *)track;
 - (void)startDownStream:(NSString *)url forTrack:(SWTrack *)track;

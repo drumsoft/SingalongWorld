@@ -31,6 +31,7 @@
     SWGeoManager *geoManager;
     SWSoundCloud *soundCloud;
     NSMutableArray *tracksArray;
+    int found, loaded;
 }
 - (void)setUptextField:(UITextField *)textField;
 - (void)resetTracks;
@@ -50,7 +51,6 @@
     
     [self setUptextField:titleTextField];
     [self setUptextField:filterTextField];
-    [self startSearch:titleTextField];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,8 +70,11 @@
     NSString *searchTitle = titleTextField.text;
     NSString *searchFilter = filterTextField.text;
     
-    [self resetTracks];
-    [soundCloud searchTitle:searchTitle withFilter:searchFilter forController:self];
+    if ( [soundCloud isChangedSearchTitle:searchTitle andFilter:searchFilter] ) {
+        statusLabel.text = @"Start searching...";
+        [self resetTracks];
+        [soundCloud searchTitle:searchTitle withFilter:searchFilter forController:self];
+    }
 }
 
 // soundCloud searchTitle から呼ばれて、検索結果の Track を登録
@@ -80,6 +83,9 @@
     [tracksArray addObject:track];
     track.imageview.hidden = true;
     [self.view addSubview:track.imageview];
+    
+    found++;
+    [self updateStatusText];
 }
 
 #define SW_SPECIAL_ZOOM_PAN 0.15
@@ -101,10 +107,12 @@ double SW_normaeizeDegree(double degree) {
 - (void)updateDirection:(double)direction fromLatitude:(double)latDegree andLongitude:(double)lngDegree {
     double maxVolume = 0, selectedPan = 0;
     SWTrack *selected = nil;
+    int counted_isReady = 0;
     
     // 方向の再計算
     for ( SWTrack *track in tracksArray) {
         if ( [track isReady] ) {
+            counted_isReady++;
             double dy = track.latitude - latDegree;
             double dx = SW_normaeizeDegree(track.longitude - lngDegree) * cos( (track.latitude+latDegree)*2*M_PI/(2*360) );
             track.direction = atan2(dx, dy) - direction * (2*M_PI) / 360;
@@ -126,17 +134,22 @@ double SW_normaeizeDegree(double degree) {
         }
     }
     
+    if ( loaded < counted_isReady ) {
+        loaded = counted_isReady;
+        [self updateStatusText];
+    }
+    
     // フォーカスの処理
     if ( selected && fabs(selectedPan) < SW_SPECIAL_ZOOM_PAN ) {
         // ラベルの書き換え
-        statusLabel.text = [NSString stringWithFormat:@"%@ by %@ (%@, %@)",
+        descriptionTextView.text = [NSString stringWithFormat:@"%@ by %@ (%@, %@)",
                             selected.title, selected.userName, selected.city, selected.country];
-        statusLabel.textColor = [UIColor whiteColor];
+        descriptionTextView.textColor = [UIColor whiteColor];
         // Z を 最大 20 まで近づける
         double r = (SW_SPECIAL_ZOOM_PAN - fabs(selectedPan)) / SW_SPECIAL_ZOOM_PAN;
         selected.z = r * SW_SPECIAL_ZOOM_Z + (1-r) * selected.z;
     } else {
-        statusLabel.text = @"";
+        descriptionTextView.text = @"";
     }
     
     // z で並び替えして描画を行う
@@ -166,10 +179,16 @@ double SW_normaeizeDegree(double degree) {
 }
 
 - (void)resetTracks {
+    found = 0;
+    loaded = 0;
     for (SWTrack *track in tracksArray) {
         [track stop];
     }
     tracksArray = [[NSMutableArray alloc] init];
+}
+
+- (void)updateStatusText {
+    statusLabel.text = [NSString stringWithFormat:@"loading.. %d / %d.", loaded, found];
 }
 
 @end

@@ -102,12 +102,19 @@ SWSoundCloud* SWSoundCloud_me;
              }];
 }
 
-- (BOOL)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller {
+- (BOOL)isChangedSearchTitle:(NSString *)searchTitle andFilter:(NSString *)searchFilter  {
     NSString *qTitle = [self normalizeText:searchTitle];
     NSString *qFilter = [self normalizeText:searchFilter];
     NSString *query = [NSString stringWithFormat:@"%@ %@", qTitle, qFilter];
     
-    if ( [prevQuery isEqualToString:query] ) return NO;
+    return ![prevQuery isEqualToString:query];
+}
+
+- (void)searchTitle:(NSString *)searchTitle withFilter:(NSString *)searchFilter forController:(SWViewController *)controller {
+    NSString *qTitle = [self normalizeText:searchTitle];
+    NSString *qFilter = [self normalizeText:searchFilter];
+    NSString *query = [NSString stringWithFormat:@"%@ %@", qTitle, qFilter];
+    prevQuery = query;
     
     [SCRequest performMethod:SCRequestMethodGET
                   onResource:[NSURL URLWithString:@"https://api.soundcloud.com/tracks.json"]
@@ -145,9 +152,6 @@ SWSoundCloud* SWSoundCloud_me;
                      }
                  }
              }];
-    
-    prevQuery = query;
-    return YES;
 }
 
 // テキストの正規化
