@@ -28,9 +28,10 @@
 #import "SCUI.h"
 #import "SWViewController.h"
 
-// create your app at http://soundcloud.com/you/apps and copy its Client ID and Client Secret here.
-#define SW_SOUNDCLOUD_CLIENT_ID     @"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-#define SW_SOUNDCLOUD_CLIENT_SECRET @"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+// <strike>create your app at http://soundcloud.com/you/apps and copy its Client ID and Client Secret here.</strike>
+// We need no Client Secret because this App requires no login to SoundCloud.
+#define SW_SOUNDCLOUD_CLIENT_ID     @"e77e730ad93b0ea41550f32b391141d1"
+#define SW_SOUNDCLOUD_CLIENT_SECRET @""
 
 SWSoundCloud* SWSoundCloud_me;
 

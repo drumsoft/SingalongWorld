@@ -2,25 +2,25 @@
 
 * 「世界中のみんなが同じ歌をうたう声」に囲まれる疑似体験ができるiPhoneアプリです。
 * 同じ曲のアマチュアによるカバーを SoundCloud から集めて、それぞれのユーザの住んでいる方角から同時に再生します。
+* ヘッドホンが必要です。
 * Music Hack Day Tokyo 2014 参加作品。審査員賞を頂きました。ありがとうございます。
 * Xcode 5.0.2 と iPhone5 でテストしています。
 
 * This is an iPhone App provides simulated experience to be surrounded by the "voices of the people around the world sings the same song." 
 * This App collects amateur vocal covers of the same song from SoundCloud and play their vocals simultaneously from the direction that they live in.
+* Headphone required.
 * Awarded the jury's award in Music Hack Day Tokyo 2014. Thankyou.
 * tested with Xcode 5.0.2 and iPhone5.
 
 
 ## Build and Play
 
-* http://soundcloud.com/you/apps で新しくアプリケーションを登録して、その Client ID と Client Secret を SWSoundCloud.m の SW_SOUNDCLOUD_CLIENT_ID, SW_SOUNDCLOUD_CLIENT_SECRET に設定します
 * Xcode で ビルド - Run します。
 * ヘッドホンをつけて、iPhoneを体の前に縦に構えて、立った姿勢で使ってください。
 * 世界的に有名な楽曲の名前を Title 欄に入れて GO! ボタンで検索して下さい。（すこし時間がかかります）
     * 楽曲の例: "Call Me Maybe", "Tsukema Tsukeru" など
 * 音楽が聴こえて来たら、その場でiPhoneを持ったまま、身体ごといろんな方向を向きましょう。世界中の同じ歌を歌う仲間が見つかります。
 
-* create your app at http://soundcloud.com/you/apps and copy its Client ID and Client Secret as SW_SOUNDCLOUD_CLIENT_ID, SW_SOUNDCLOUD_CLIENT_SECRET in SWSoundCloud.m.
 * Build and Run this App with Xcode.
 * Wear the headphones, held the iPhone vertically in front of your body and use this App a standing position.
 * Put a world-famous song title in the Title field. Push GO! button and search. (It will take some seconds.)
