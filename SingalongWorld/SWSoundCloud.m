@@ -28,8 +28,9 @@
 #import "SCUI.h"
 #import "SWViewController.h"
 
-#define SW_SOUNDCLOUD_CLIENT_ID     @"80b083d0d4d07a1cf3bbd93e169fbd51"
-#define SW_SOUNDCLOUD_CLIENT_SECRET @"8ec0042d5d2846fef4b2e6bdddce4d09"
+// create your app at http://soundcloud.com/you/apps and copy its Client ID and Client Secret here.
+#define SW_SOUNDCLOUD_CLIENT_ID     @"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+#define SW_SOUNDCLOUD_CLIENT_SECRET @"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 SWSoundCloud* SWSoundCloud_me;
 
