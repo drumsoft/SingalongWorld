@@ -1,5 +1,7 @@
 # Singalong World
 
+Product Version Released! http://sw.drumsoft.com/
+
 Demo Video! https://vimeo.com/90084812
 
 * 「世界中のみんなが同じ歌をうたう声」に囲まれる疑似体験ができるiPhoneアプリです。
